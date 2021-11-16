@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139.66 240.58">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e2e2e2;
+      }
+
+      .cls-2 {
+        fill: #fefefe;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <polygon class="cls-1" points="139.6 185.68 0.15 105.16 0 55.12 139.66 135.75 139.6 185.68"/>
+        <polygon class="cls-2" points="139.01 45.88 0.15 105.16 0.18 55.72 136.95 0 139.01 45.88"/>
+        <polygon class="cls-2" points="139.13 184.86 2.36 240.58 1.93 194.04 139.66 135.75 139.13 184.86"/>
+      </g>
+    </g>
+  </g>
+</svg>
