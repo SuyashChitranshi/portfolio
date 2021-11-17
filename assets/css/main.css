@@ -2604,6 +2604,15 @@ input, select, textarea {
 		width: 100%;
 		height: 100%;
 	  }
+	  .responsive-about {
+		position: relative;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 30%;
+		height: 30%;
+	  }
 
 /* Tiles */
 
