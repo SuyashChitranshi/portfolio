@@ -2759,27 +2759,27 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #1D1A05;
+				background-color: #222725;
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #1D1A05;
+				background-color: #222725;
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #1D1A05;
+				background-color: #222725;
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #1D1A05;
+				background-color: #222725;
 			}
 
 			.tiles article.style5 > .image:before {
-				background-color: #1D1A05;
+				background-color: #222725;
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #1D1A05;
+				background-color: #222725;
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
