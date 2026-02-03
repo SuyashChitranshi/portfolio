@@ -1,174 +1,312 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<link rel="icon" href="images/logo_new_white.svg">
-		<title>Porfolio | Suyash Chitranshi</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Senior UX Designer | Suyash Chitranshi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#196ee6",
+                        "background-light": "#fcfcfc",
+                        "background-dark": "#0a0c10",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .text-outline {
+                -webkit-text-stroke: 1px currentColor;
+                -webkit-text-fill-color: transparent;
+            }
+            .writing-vertical {
+                writing-mode: vertical-rl;
+            }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-gray-100 transition-colors duration-200">
+<header class="fixed top-0 left-0 w-full z-50 mix-blend-difference invert dark:invert-0">
+<div class="max-w-[1600px] mx-auto px-6 lg:px-12 py-8 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="text-xl font-black tracking-tighter uppercase leading-none"><a href="index.html">Suyash Chitranshi</a></h2>
+</div>
+<nav class="hidden md:flex items-center gap-12">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-50 transition-opacity" href="Resume_SuyashChitranshi_UX.pdf">Resume</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-50 transition-opacity" href="about.html">About</a>
+<button class="bg-white text-black text-xs font-black uppercase tracking-widest px-6 py-3">
+            <a href="tel:+917066628523">Contact</a>  
+            </button>
+</nav>
+</div>
+</header>
+<main class="pt-32 pb-20 overflow-x-hidden">
+<section class="max-w-[1600px] mx-auto px-6 lg:px-12 mb-40 relative">
+<div class="relative">
+<h1 class="text-[clamp(3rem,12vw,12rem)] font-black leading-[0.85] tracking-[-0.05em] mb-12 uppercase italic lg:not-italic">
+                Senior UX / <br/>
+<span class="text-primary lg:ml-40 block lg:inline">Visual Designer</span>
+</h1>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-4 lg:col-start-2">
+<p class="text-xl lg:text-2xl text-gray-600 dark:text-gray-400 leading-tight font-medium">
+                        Scaling complex enterprise products through intentional, user-centered design systems. Focusing on clarity, scalability, and performance for B2B platforms.
+                    </p>
+</div>
+<div class="lg:col-span-3 lg:col-start-9 flex flex-col gap-6 pt-4">
+	<a href="#portfolio">
+<button class="group flex items-center justify-between w-full text-left border-b border-black/10 dark:border-white/10 pb-4 hover:border-primary transition-colors">
+<span class="text-sm font-bold uppercase tracking-widest">View Portfolio</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button></a>
+</div>
+</div>
+</div>
+<div class="absolute -top-10 -right-20 pointer-events-none opacity-[0.03] select-none hidden lg:block">
+<span class="text-[25rem] font-black leading-none uppercase tracking-tighter">UXV</span>
+</div>
+</section>
+<section class="max-w-[1400px] mx-auto px-6 lg:px-12 py-32 border-t border-black/5 dark:border-white/5">
+<div class="flex items-baseline gap-4 mb-24">
+<span class="text-xs font-black uppercase tracking-[0.3em] opacity-40">Section 01</span>
+<h2 class="text-5xl font-black tracking-tight uppercase">Core Expertise</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-y-24 md:gap-y-0 relative">
+<div class="md:col-span-4 md:translate-y-0 group">
+<div class="max-w-xs">
+<div class="text-6xl font-black text-primary/10 mb-6 group-hover:text-primary transition-colors duration-500">01</div>
+<h3 class="text-2xl font-black uppercase mb-4 tracking-tight">End-to-End Product Design</h3>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed border-l-2 border-primary pl-6 py-2">
+                        Driving complex digital products from problem discovery to scalable, high-quality delivery.
+                    </p>
+</div>
+</div>
+<div class="md:col-span-4 md:translate-y-32 group">
+<div class="max-w-xs md:mx-auto">
+<div class="text-6xl font-black text-primary/10 mb-6 group-hover:text-primary transition-colors duration-500">02</div>
+<h3 class="text-2xl font-black uppercase mb-4 tracking-tight">User-Centered & Systems-Driven UX</h3>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed border-l-2 border-primary pl-6 py-2">
+                        Translating user needs and business goals into structured user flows, information architecture, and interaction models.
+                    </p>
+</div>
+</div>
+<div class="md:col-span-4 md:-translate-y-12 group">
+<div class="max-w-xs md:ml-auto">
+<div class="text-6xl font-black text-primary/10 mb-6 group-hover:text-primary transition-colors duration-500">03</div>
+<h3 class="text-2xl font-black uppercase mb-4 tracking-tight">Visual & Interface Design Excellence</h3>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed border-l-2 border-primary pl-6 py-2">
+                        Crafting pixel-perfect, accessible, and brand-aligned interfaces for enterprise-scale products.
+                    </p>
+</div>
+</div>
+<div class="md:col-span-4 md:col-start-8 md:translate-y-48 group">
+<div class="max-w-xs md:ml-auto">
+<div class="text-6xl font-black text-primary/10 mb-6 group-hover:text-primary transition-colors duration-500">04</div>
+<h3 class="text-2xl font-black uppercase mb-4 tracking-tight">Design Systems & Consistency at Scale</h3>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed border-l-2 border-primary pl-6 py-2">
+                        Building, evolving, and applying component libraries and design standards across products and teams.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<section id="portfolio" class="max-w-[1600px] mx-auto px-6 lg:px-12 py-64">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end mb-24">
+<div class="lg:col-span-7">
+<span class="text-primary font-bold tracking-[0.5em] text-[10px] uppercase block mb-4">Portfolio</span>
+<h2 class="text-6xl lg:text-8xl font-black tracking-tighter uppercase leading-[0.9]">Selected <br/>Case Studies</h2>
+</div>
+<div class="lg:col-span-4 lg:col-start-9 pb-2">
+<p class="text-gray-600 dark:text-gray-400 text-lg border-l-4 border-black dark:border-white pl-6">
+                    Selected case studies demonstrating end-to-end UX, visual design, and problem-solving across complex enterprise products.
+                </p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-20">
+<div class="lg:col-span-8 group cursor-pointer">
+<div class="relative aspect-[16/9] overflow-hidden mb-10 bg-gray-100 dark:bg-gray-900">
+<div class="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-700 bg-cover bg-center group-hover:scale-105" data-alt="Clean dashboard UI with charts and tables" ><img src="images/Cover.png">
+</div>
+<div class="absolute bottom-0 left-0 p-8 flex flex-wrap gap-2 opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-500">
+<span class="bg-black text-white px-4 py-2 text-[10px] font-black uppercase tracking-widest">B2B Platform UX</span>
+<span class="bg-primary text-white px-4 py-2 text-[10px] font-black uppercase tracking-widest">Complex Workflow Design</span>
+</div>
+</div>
+<div class="flex gap-8">
+<div class="text-sm font-black opacity-20 pt-2 tracking-widest">01/</div>
+<div>
+<h3 class="text-4xl font-black uppercase mb-4 tracking-tighter group-hover:text-primary transition-colors">Enterprise Operations Management Platform</h3>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl mb-6">
+                            Redesigned a data-heavy internal platform to simplify complex workflows and improve operational clarity at scale.
+                        </p>
+<div class="flex items-center text-primary font-black text-xs uppercase tracking-widest gap-2"><a href="Platform.html">
+                            Explore Project <span class="material-symbols-outlined text-sm">north_east</span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 lg:pt-40 group cursor-pointer">
+<div class="relative aspect-[1/1] overflow-hidden mb-10 bg-gray-100 dark:bg-gray-900">
+<div class="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-700 bg-cover bg-center group-hover:scale-105" data-alt="Modern dark mode fintech interface" ><img src="images/Talent Academy/Cover.png">
+</div>
+<div class="absolute bottom-0 left-0 p-8 flex flex-wrap gap-2 opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-500">
+<span class="bg-black text-white px-4 py-2 text-[10px] font-black uppercase tracking-widest">Enterprise Product Design</span>
+<span class="bg-primary text-white px-4 py-2 text-[10px] font-black uppercase tracking-widest">Design Systems & UI</span>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="text-sm font-black opacity-20 pt-2 tracking-widest">02/</div>
+<div>
+<h3 class="text-3xl font-black uppercase mb-4 tracking-tighter group-hover:text-primary transition-colors">Enterprise E-Learning Platform</h3>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                            Role-based enterprise learning platform designed to reduce content overload and guide structured employee upskilling.
+                        </p>
+<div class="flex items-center text-primary font-black text-xs uppercase tracking-widest gap-2"><a href="Talent_academy.html">
+                            Explore Project <span class="material-symbols-outlined text-sm">north_east</span></a>
+</div>
+</div>
+</div>
+</div>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+</div>
+<!--<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-20">
+<div class="lg:col-span-8 group cursor-pointer">
+<div class="relative aspect-[16/9] overflow-hidden mb-10 bg-gray-100 dark:bg-gray-900">
+<div class="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-700 bg-cover bg-center group-hover:scale-105" data-alt="Clean dashboard UI with charts and tables" ><img src="images/app_cover.jpg">
+</div>
+<div class="absolute bottom-0 left-0 p-8 flex flex-wrap gap-2 opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-500">
+<span class="bg-black text-white px-4 py-2 text-[10px] font-black uppercase tracking-widest">Mobile App UX</span>
+<span class="bg-primary text-white px-4 py-2 text-[10px] font-black uppercase tracking-widest">User-Centered Design</span>
+</div>
+</div>
+<div class="flex gap-8">
+<div class="text-sm font-black opacity-20 pt-2 tracking-widest">03/</div>
+<div>
+<h3 class="text-4xl font-black uppercase mb-4 tracking-tighter group-hover:text-primary transition-colors">Remy's Food Truck</h3>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl mb-6">
+                            Designed a mobile food-ordering app to help users quickly find and order healthy, affordable meals through a research-driven UX process.
+                        </p>
+<div class="flex items-center text-primary font-black text-xs uppercase tracking-widest gap-2"><a href="remyfoodtruck.html">
+                            Explore Project <span class="material-symbols-outlined text-sm">north_east</span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 lg:pt-40 group cursor-pointer">
+<div class="relative aspect-[4/3] overflow-hidden mb-10 bg-gray-100 dark:bg-gray-900">
+<div class="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-700 bg-cover bg-center group-hover:scale-105" data-alt="Modern dark mode fintech interface"><img src="images/BSB_Brand_Guide.jpg">
+</div>
+<div class="absolute bottom-0 left-0 p-8 flex flex-wrap gap-2 opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-500">
+<span class="bg-black text-white px-4 py-2 text-[10px] font-black uppercase tracking-widest">Brand Design</span>
+<span class="bg-primary text-white px-4 py-2 text-[10px] font-black uppercase tracking-widest">Design Systems</span>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="text-sm font-black opacity-20 pt-2 tracking-widest">04/</div>
+<div>
+<h3 class="text-3xl font-black uppercase mb-4 tracking-tighter group-hover:text-primary transition-colors">Brand Design Guide</h3>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                            Created brand design guidelines to bring consistency across digital and print touchpoints for a growing lifestyle brand.
+                        </p>
+<div class="flex items-center text-primary font-black text-xs uppercase tracking-widest gap-2"><a href="brandguide.html">
+                            Explore Project <span class="material-symbols-outlined text-sm">north_east</span></a>
+</div>
+</div>
+</div>
+</div>
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo_new.svg" alt="" /></span><span class="title">Suyash Chitranshi</span>
-								</a>
+</div>-->
+</section>
+<section class="max-w-[1600px] mx-auto px-6 lg:px-12 mb-40">
+<div class="bg-black dark:bg-[#111] py-24 px-8 lg:px-24 text-white relative overflow-hidden">
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+<div class="lg:col-span-4">
+<h2 class="text-5xl lg:text-7xl font-black mb-8 uppercase leading-[0.85] tracking-tighter">Design <br/>for <br/>Complexity</h2>
+<div class="w-12 h-1 bg-primary mt-8"></div>
+</div>
+<div class="lg:col-span-8 lg:col-start-6 space-y-16">
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="text-outline text-6xl font-black opacity-40">01</div>
+<div>
+<h4 class="text-2xl font-black mb-4 uppercase tracking-tight">Systems Thinking</h4>
+<p class="text-gray-400 leading-relaxed text-lg">I don't just design screens; I design the rules and components that build them. Ensuring consistency across thousands of views.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-start translate-x-0 lg:translate-x-12">
+<div class="text-outline text-6xl font-black opacity-40">02</div>
+<div>
+<h4 class="text-2xl font-black mb-4 uppercase tracking-tight">Technical Feasibility</h4>
+<p class="text-gray-400 leading-relaxed text-lg">Working closely with engineering to ensure designs are performant and modular. I speak the language of code to bridge the gap.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-start translate-x-0 lg:translate-x-24">
+<div class="text-outline text-6xl font-black opacity-40">03</div>
+<div>
+<h4 class="text-2xl font-black mb-4 uppercase tracking-tight">Data-Driven Logic</h4>
+<p class="text-gray-400 leading-relaxed text-lg">Enterprise design is about utility. Every pixel serves a purpose based on user tasks and data hierarchy.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute -right-20 -bottom-20 pointer-events-none opacity-10">
+<span class="text-[30rem] font-black uppercase italic leading-none tracking-tighter text-outline">CORE</span>
+</div>
+</div>
+</section>
+<section class="py-40 text-center px-6">
+<div class="max-w-4xl mx-auto border-y border-black/10 dark:border-white/10 py-20 relative">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-background-light dark:bg-background-dark px-6">
+<span class="text-[10px] font-black uppercase tracking-[0.8em] opacity-40">Get in touch</span>
+</div>
+<h2 class="text-5xl lg:text-7xl font-black mb-12 uppercase tracking-tighter leading-none">Ready to scale <br/>your product?</h2>
+<p class="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-xl mx-auto leading-relaxed">
+                I'm currently available for full-time senior roles in product-led organizations.
+            </p>
+<div class="flex justify-center">
+<button class="bg-primary text-white font-black uppercase tracking-widest px-12 py-5 text-sm hover:translate-y-[-4px] transition-transform">
+                    <a href="mailto:chitranshi1996@gmail.com">Let's Talk</a>
+                </button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-black text-white py-20">
+<div class="max-w-[1600px] mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+<div class="md:col-span-4">
+<div class="flex items-center gap-3 mb-8">
+<h2 class="text-2xl font-black tracking-tighter uppercase">Suyash Chitranshi</h2>
+</div>
+<p class="text-gray-500 text-sm font-medium">© 2026 Senior UX Designer</p>
+</div>
+<div class="md:col-span-4 md:col-start-6">
+<div class="grid grid-cols-2 gap-8 text-sm font-black uppercase tracking-widest">
+<div class="flex flex-col gap-4">
+<a class="hover:text-primary transition-colors" href="https://www.linkedin.com/in/suyashchitranshi/">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="https://www.behance.net/chitranshisuyash">Behance</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="hover:text-primary transition-colors" href="Resume_SuyashChitranshi_UX.pdf">Resume (PDF)</a>
+<a class="hover:text-primary transition-colors" href="mailto:chitranshi1996@gmail.com">Email</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
-
-						</div>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="Resume_SuyashChitranshi_UX.pdf">Resume</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>Hi, I'm Suyash</h1>
-									<h3> I'm a UX/Product Designer with 5+ years of experience, 
-										<br/>Designing intuitive experiences for complex, workflow-driven platforms across enterprise environments.</h3>
-							</header>
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/Cover.png" alt="" />
-									</span>
-									<a href="Platform.html">
-										<h2>Operations Management Platform</h2>
-										<div class="content">
-											<p>Case Study on the UX journey covered during Website</p>
-										</div>
-									</a>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="images/Talent Academy/Cover.png" alt="" />
-									</span>
-									<a href="Talent_academy.html">
-										<h2>Enterprise E-Learning Platform</h2>
-										<div class="content">
-											<p>Case Study on the Enterprise Talent Academy</p>
-										</div>
-									</a>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="images/app_cover.jpg" alt="" />
-									</span>
-									<a href="remyfoodtruck.html">
-										<h2>Remy's Food Truck</h2>
-										<div class="content">
-											<p>Case Study on the UX journey covered during App Design</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/BSB_Brand_Guide.png" alt="" />
-									</span>
-									<a href="brandguide.html" >
-										<h2>Brand Design Guide</h2>
-										<div class="content">
-											<p>A Brand Design Guideline prepared for Bike Street Boys.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/Valley_of_Gods.jpg" alt="" />
-									</span>
-									<a href="valleyofgod.html">
-										<h2>Valley of Gods</h2>
-										<div class="content">
-											<p>A Video to showcase our Bicycling experience. </p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/Pune_Bike_Tour.png" alt="" />
-									</span>
-									<a href="punebiketour.html">
-										<h2>Pune Bike Tour</h2>
-										<div class="content">
-											<p>Flyer Design for Bike Street Boys upcoming Bicycle tour in Pune, India.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/ride_of_pi_thimbnail.png" alt="" />
-									</span>
-									<a href="infographics.html">
-										<h2>Itineraries & Infographics</h2>
-										<div class="content">
-											<p>A short description of Itineraries and Infographics created for Bike Street Boys.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/thanksgiving.jpg" alt="" />
-									</span>
-									<a href="recipe.html">
-										<h2>Recipes for Indian Cuisines</h2>
-										<div class="content">
-											<p>Infographics created for different Indian cuisines for Thanksgiving.</p>
-										</div>
-									</a>
-								</article>
-							</section>
-						</div>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Let's Connect</h2>
-								<ul class="icons">
-									<li><a href="https://www.behance.net/chitranshisuyash" class="icon brands style2 fa-behance"><span class="label">Behance</span></a></li>
-									<li><a href="https://github.com/SuyashChitranshi" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/suyashchitranshi/" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="tel:+917066628523" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="mailto:chitranshi1996@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Suyash Chitranshi. </li><li>UX Designer</li>
-							</ul>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+</body></html>

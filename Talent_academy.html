@@ -1,174 +1,341 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Enterprise E-Learning Platform Case Study</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#196ee6",
+                        "background-light": "#fcfcfc",
+                        "background-dark": "#0a0c10",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .text-outline {
+                -webkit-text-stroke: 1px currentColor;
+                -webkit-text-fill-color: transparent;
+            }
+            .writing-vertical {
+                writing-mode: vertical-rl;
+            }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-gray-100 transition-colors duration-200">
+<header class="fixed top-0 left-0 w-full z-50 mix-blend-difference invert dark:invert-0">
+<div class="max-w-[1600px] mx-auto px-6 lg:px-12 py-8 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="text-xl font-black tracking-tighter uppercase leading-none"><a href="index.html">Suyash Chitranshi</a></h2>
+</div>
+<nav class="hidden md:flex items-center gap-12">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-50 transition-opacity" href="Resume_SuyashChitranshi_UX.pdf">Resume</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-50 transition-opacity" href="about.html">About</a>
+<button class="bg-white text-black text-xs font-black uppercase tracking-widest px-6 py-3">
+            <a href="tel:+917066628523">Contact</a>  
+            </button>
+</nav>
+</div>
+</header>
+<main class="flex flex-col items-center">
+<section class="w-full pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
+<div class="max-w-[1400px] mx-auto px-6 md:px-12">
+<div class="flex flex-col lg:flex-row gap-16 items-start">
+<div class="lg:w-7/12 flex flex-col gap-8">
+<div class="flex flex-col gap-6">
+<span class="text-accent-muted font-bold tracking-[0.3em] text-[10px] uppercase">Enterprise E-Learning Platform</span>
+<h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-balance">Designing a scalable, role-based learning experience</h1>
+<p class="text-xl md:text-2xl text-stone-500 dark:text-gray-400 font-light max-w-2xl leading-relaxed">
+                            Designed to enable employees, managers, and administrators to discover, consume, track, and manage learning programs efficiently.
+                        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+<div class="p-6 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm">
+<p class="text-[10px] uppercase tracking-[0.2em] text-accent-muted font-bold mb-3">The Role</p>
+<p class="text-sm font-medium">UX Designer</p>
+<p class="text-xs text-stone-400 mt-1">User Flows, Interaction Design, wireframes, High-Fidelity UI, Stakeholder collaboration</p>
+</div>
+<div class="p-6 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm">
+<p class="text-[10px] uppercase tracking-[0.2em] text-accent-muted font-bold mb-3">The Timeline</p>
+<p class="text-sm font-medium">12 Months (2023-24)</p>
+<p class="text-xs text-stone-400 mt-1">From Discovery to Launch</p>
+</div>
+</div>
+</div>
+<div class="lg:w-5/12 w-full lg:sticky lg:top-40">
+<div class="p-8 border-l-2 border-accent/20 bg-stone-light/50 dark:bg-stone-900/10">
+<div class="flex flex-col gap-8">
+<div>
+<p class="text-[10px] uppercase tracking-[0.2em] text-accent-muted font-bold mb-2">Tools</p>
+<p class="text-sm">Adobe XD, Microsoft Powerpoint, Adobe Illustrator</p>
+</div>
 
-<html>
-	<head>
-		<link rel="icon" href="images/logo_new_white.svg">
-		<title>Project | Enterprise E-Learning Platform</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body style="background: #424242;" class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+<div class="pt-6 border-t border-stone-border">
+<p class="text-[10px] uppercase tracking-[0.2em] text-accent font-bold mb-2">Primary Impact</p>
+<p class="text-4xl font-light text-accent">35% <span class="text-sm font-normal text-stone-400 uppercase tracking-widest">Increase in Course Completion Rates</span></p><br>
+<p class="text-4xl font-light text-accent">25% <span class="text-sm font-normal text-stone-400 uppercase tracking-widest">Reduced Perceived Mental Effort</span></p><br>
+<p class="text-4xl font-light text-accent">40% <span class="text-sm font-normal text-stone-400 uppercase tracking-widest">Drop in User Frustration Levels</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-20 @container">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-stone-200 rounded-sm min-h-[500px] md:min-h-[700px] shadow-2xl" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0)), url('images/Talent Academy/Cover.png');">
+<div class="p-12 md:p-20">
+<p class="text-white text-3xl font-light leading-tight">From Cognitive overload to Empowered Learning</p>
+<p class="text-stone-300 mt-3 font-medium tracking-wide">Our deliberate process for turning Complexity into Role-Based Clarity.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="max-w-[1400px] w-full px-6 md:px-12 py-32">
+<div class="flex flex-col items-center">
+<div class="case-study-content w-full">
+<section class="mb-40" id="problem">
+<div class="flex flex-col md:flex-row gap-12 items-baseline mb-12">
+<span class="text-stone-300 text-6xl font-light shrink-0">01</span>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">The Problem: Decision Paralysis & Lack of Clarity</h2>
+</div>
+<div class="space-y-8">
+<p class="text-2xl leading-relaxed text-stone-600 dark:text-stone-300 font-light italic">
+                            Existing learning platforms were fragmented, content-heavy, and failed to guide employees toward role-specific mastery.
+                        </p>
+<p class="text-lg leading-relaxed text-stone-500 dark:text-stone-400 max-w-3xl">
+                            67% of employees struggled to identify the right learning path due to cluttered and unstructured course catalogs
+                        </p>
+<p class="text-lg leading-relaxed text-stone-500 dark:text-stone-400 max-w-3xl">
+                            63% of enrolled learners failed to complete role-relevant programs because progress and outcomes were unclear.
+                        </p>
+<div class="bg-white dark:bg-stone-900 border border-stone-border p-10 rounded-sm mt-12 editorial-shadow max-w-3xl">
+<p class="text-[10px] font-bold text-accent uppercase tracking-[0.3em] mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">warning</span> Core Pain Point
+                            </p>
+<blockquote class="text-xl text-stone-800 dark:text-stone-200 font-light border-l-2 border-accent pl-8 italic">
+                                "I never know what I’m supposed to complete next. Courses are spread across different sections, and there’s no clear view of my progress or priorities." 
+                                <footer class="text-xs uppercase tracking-widest text-stone-400 mt-4 font-bold">— Anonymous Learner</footer>
+</blockquote>
+</div>
+</div>
+</section>
+<section class="mb-40 bg-accent p-12 md:p-20 rounded-sm" id="contributions">
+<div class="max-w-4xl">
+<h2 class="text-3xl font-light tracking-tight mb-8 flex items-center gap-4">
+<span class="material-symbols-outlined text-black/50">verified_user</span> 
+                            Constraints Faced
+                        </h2>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<li class="flex flex-col gap-4">
+<span class="material-symbols-outlined text-black/40 text-3xl">watch</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-widest mb-2">Time Constraints</p>
+<p class="text-sm text-black/60 leading-relaxed">The platform had to be designed and rolled out alongside ongoing learning programs, limiting the ability to pause or restructure existing content flows. UX decisions needed to prioritize incremental clarity improvements over large-scale system changes.</p>
+</div>
+</li>
+<li class="flex flex-col gap-4">
+<span class="material-symbols-outlined text-black/40 text-3xl">architecture</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-widest mb-2">Technical Constraints</p>
+<p class="text-sm text-black/60 leading-relaxed">The LMS was built on a legacy learning infrastructure with fixed role taxonomies, course metadata, and certification logic. This restricted deep personalization and required UX solutions that worked within existing data structures rather than redefining them.</p>
+</div>
+</li>
+<li class="flex flex-col gap-4">
+<span class="material-symbols-outlined text-black/40 text-3xl">psychology</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-widest mb-2">User Constraints</p>
+<p class="text-sm text-black/60 leading-relaxed">Learners had highly varied experience levels—from fresh hires to senior engineers—making it necessary to balance simplicity for new users with depth for advanced learners, without fragmenting the experience.</p>
+</div>
+</li>
+<li class="flex flex-col gap-4">
+<span class="material-symbols-outlined text-black/40 text-3xl">business</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-widest mb-2">Organizational Constraints</p>
+<p class="text-sm text-black/60 leading-relaxed">Design decisions needed to align with L&D governance models, approval workflows, and compliance requirements already in place. Stakeholder alignment across HR, engineering, and leadership influenced prioritization and scope throughout the project.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section class="mb-40" id="process">
+<div class="flex flex-col md:flex-row gap-12 items-baseline mb-12">
+<span class="text-stone-300 text-6xl font-light shrink-0">02</span>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Expected Outcomes</h2>
+</div>
+<div class="space-y-12">
+<p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-3xl">
+                            The redesigned learning experience was expected to improve clarity around what to learn, why it matters, and how progress is measured, enabling employees to engage with role-relevant learning paths confidently and with reduced reliance on external guidance.
+                        </p>
+<p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-3xl">
+                            By structuring learning journeys and making progression visible, the platform aimed to shift learning behavior from passive exploration to goal-oriented skill development, while giving L&D and leadership teams better visibility into learning outcomes.
+<div class="overflow-hidden rounded-sm border border-stone-border editorial-shadow bg-white dark:bg-stone-900/40">
+<table class="w-full text-left border-collapse">
+<thead class="bg-stone-light dark:bg-stone-800/50">
+<tr>
+<th class="px-8 py-6 text-[10px] font-bold uppercase tracking-[0.2em] text-accent-muted">Expected Outcomes</th>
+<th class="px-8 py-6 text-[10px] font-bold uppercase tracking-[0.2em] text-accent-muted">Description</th>
 
-				<!-- Header -->
-				<header id="header">
-					<div class="inner">
+</tr>
+</thead>
+<tbody class="divide-y divide-stone-border dark:divide-gray-800">
+<tr class="hover:bg-stone-light/50 transition-colors">
+<td class="px-8 py-8 text-sm font-bold text-stone-800 dark:text-stone-200">Reduce learning discovery time</td>
+<td class="px-8 py-8 text-sm text-stone-500">This directly addressed the issue where 67% of employees struggled to identify the right learning path due to cluttered and unstructured course catalogs.</td>
+</tr>
+<tr class="hover:bg-stone-light/50 transition-colors">
+<td class="px-8 py-8 text-sm font-bold text-stone-800 dark:text-stone-200">Increase learning completion rates</td>
+<td class="px-8 py-8 text-sm text-stone-500">By introducing clear progression stages and certifications, the design aimed to reduce drop-offs, addressing the problem where 63% of enrolled learners failed to complete role-relevant programs</td>
+</tr>
+<tr class="hover:bg-stone-light/50 transition-colors">
+<td class="px-8 py-8 text-sm font-bold text-stone-800 dark:text-stone-200">Improve visibility into skill readiness</td>
+<td class="px-8 py-8 text-sm text-stone-500">This outcome targeted the gap where 69% of L&D stakeholders lacked visibility into employee skill maturity and role readiness across teams.</td>
+</tr>
+<tr class="hover:bg-stone-light/50 transition-colors">
+<td class="px-8 py-8 text-sm font-bold text-stone-800 dark:text-stone-200">Standardize learning across roles</td>
+<td class="px-8 py-8 text-sm text-stone-500">The role-based framework was designed to reduce redundant learning and inconsistency by providing structured, repeatable learning paths aligned to organizational roles.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="mb-40" id="decisions">
+<div class="flex flex-col md:flex-row gap-12 items-baseline mb-16">
+<span class="text-stone-300 text-6xl font-light shrink-0">03</span>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Key Design Decisions</h2>
+</div>
+<div class="flex flex-col gap-32">
+<div class="flex flex-col gap-12">
+<div class="max-w-8xl">
+<div class="inline-block border-b-2 border-accent mb-6">
+<p class="text-[10px] font-bold uppercase tracking-[0.3em] pb-1 text-accent">Decision #1</p>
+</div>
+<h3 class="text-3xl font-bold mb-6">Implementation of Outcome-Driven Progress Frameworks</h3>
+<p class="text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
+                                    Improving the efficiency of user progression was achieved by replacing open-ended exploration with structured milestones:
+                                </p>
+</div>
+<div class="bg-stone-light dark:bg-stone-900 p-4 rounded-sm border border-stone-border editorial-shadow">
+<div class="bg-stone-200 flex items-center justify-center relative overflow-hidden" data-alt="Close up of a data grid with color-coded status indicators">
+<img alt="Annotated UI" class=" object-cover w-full" src="images/Talent Academy/Hi-Fi Wireframes_2.png"/>
+</div>
+<div class="p-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="flex flex-col gap-4">
+<p class="text-[10px] font-bold uppercase tracking-widest text-accent">01. Maturity Models</p>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">Designers introduced a 5-stage learning maturity model (Aware, Equipped, Competent, Expert, and Certification) to provide a clear roadmap for skill mastery.</p>
+</div>
+<div class="flex flex-col gap-4">
+<p class="text-[10px] font-bold uppercase tracking-widest text-accent">02. Progress Transparency</p>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">The use of 0% → 100% progress indicators, modular progress cards, and at-a-glance metrics (such as total learning time) helped reduce the cognitive effort required to track one’s own status.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-12">
+<div class="max-w-8xl">
+<div class="inline-block border-b-2 border-accent mb-6">
+<p class="text-[10px] font-bold uppercase tracking-[0.3em] pb-1 text-accent">Decision #2</p>
+</div>
+<h3 class="text-3xl font-bold mb-6">Decision Reduction through Multi-Layered Personalization</h3>
+<p class="text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
+                                    To combat "decision paralysis" and content fatigue in large-scale environments, the Talent Academy implemented a three-layer recommendation framework. This system automatically maps learning paths to an employee's organization-mapped role, primary skill area, and functional role, allowing users to find actionable content within seconds. 
+                                </p>
+</div>
+<div class="bg-stone-light dark:bg-stone-900 rounded-sm border border-stone-border p-4 editorial-shadow">
+<div class="bg-stone-200 flex items-center justify-center relative overflow-hidden" data-alt="Side drawer UI showing detailed shipment history and documentation">
+<img alt="UI Screenshot" class="object-cover w-full" src="images/Talent Academy/Hi-Fi Wireframes.png"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-40 pt-24 border-t border-stone-border" id="outcome">
+<div class="flex flex-col md:flex-row gap-12 items-baseline mb-16">
+<span class="text-stone-300 text-6xl font-light shrink-0">04</span>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Outcome &amp; Impact</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+<div class="bg-stone-light dark:bg-stone-900/50 p-12 border border-stone-border text-center">
+<p class="text-6xl font-light text-accent mb-4">3%</p>
+<p class="text-[10px] font-bold uppercase text-stone-400 tracking-[0.2em] mb-4">Form Errors</p>
+<p class="text-xs text-stone-500 leading-relaxed">Reduction in Form Submission Errors.</p>
+</div>
+<div class="bg-stone-light dark:bg-stone-900/50 p-12 border border-stone-border text-center">
+<p class="text-6xl font-light text-accent mb-4">94%</p>
+<p class="text-[10px] font-bold uppercase text-stone-400 tracking-[0.2em] mb-4">Task Success Rate</p>
+<p class="text-xs text-stone-500 leading-relaxed">The rate of successfully finding a lecture video improved.</p>
+</div>
+<div class="bg-stone-light dark:bg-stone-900/50 p-12 border border-stone-border text-center">
+<p class="text-6xl font-light text-accent mb-4">58%</p>
+<p class="text-[10px] font-bold uppercase text-stone-400 tracking-[0.2em] mb-4">User Sentiment</p>
+<p class="text-xs text-stone-500 leading-relaxed">Users reporting a clear sense of "understanding"</p>
+</div>
+</div>
+<div class="bg-stone-light dark:bg-stone-900 border border-stone-border p-12 md:p-24 rounded-sm relative overflow-hidden editorial-shadow">
+<span class="material-symbols-outlined absolute -right-8 -bottom-8 text-[200px] text-accent/5 select-none">format_quote</span>
+<div class="max-w-3xl relative z-10">
+<p class="text-3xl md:text-4xl font-light leading-tight italic text-stone-800 dark:text-stone-100">
+                                "The solution drove tangible improvements across the LMS ecosystem by reducing learning friction, improving content discoverability, and increasing real-time visibility into learner progress, resulting in  users completion learning tasks with greater confidence, fewer support dependencies, and clearer awareness of their progress and next steps."
+                            </p>
+<div class="mt-12 flex items-center gap-6">
+<div class="size-14 bg-accent rounded-full flex items-center justify-center text-white text-xl font-light">JD</div>
+</div>
+</div>
+</div>
+<!--<div class="mt-40 text-center flex flex-col items-center">
+<h3 class="text-2xl font-light mb-10 max-w-md">Want to dive deeper into the process behind this transformation?</h3>
+<div class="flex flex-col sm:flex-row justify-center gap-6 w-full max-w-lg">
+<button class="flex-1 flex items-center justify-center gap-3 bg-transparent border border-stone-border font-bold py-5 px-8 rounded-sm hover:bg-stone-light dark:hover:bg-stone-800 transition-all text-xs uppercase tracking-widest">
+                                <a href="">Check Full Case Study on Behance</a>
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>-->
+</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-black text-white py-20">
+<div class="max-w-[1600px] mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+<div class="md:col-span-4">
+<div class="flex items-center gap-3 mb-8">
+<h2 class="text-2xl font-black tracking-tighter uppercase">Suyash Chitranshi</h2>
+</div>
+<p class="text-gray-500 text-sm font-medium">© 2026 Senior UX Designer</p>
+</div>
+<div class="md:col-span-4 md:col-start-6">
+<div class="grid grid-cols-2 gap-8 text-sm font-black uppercase tracking-widest">
+<div class="flex flex-col gap-4">
+<a class="hover:text-primary transition-colors" href="https://www.linkedin.com/in/suyashchitranshi/">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="https://www.behance.net/chitranshisuyash">Behance</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="hover:text-primary transition-colors" href="Resume_SuyashChitranshi_UX.pdf">Resume (PDF)</a>
+<a class="hover:text-primary transition-colors" href="mailto:chitranshi1996@gmail.com">Email</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
 
-						<!-- Logo -->
-							<a href="index.html" class="logo">
-								<span class="symbol"><img src="images/logo_new.svg" alt="" /></span><span class="title" style="color: white;">Suyash Chitranshi</span>
-							</a>
-
-						<!-- Nav -->
-							<nav>
-								<ul>
-									<li><a href="#menu">Menu</a></li>
-								</ul>
-							</nav>
-
-					</div>
-				</header>
-
-				<!-- Menu -->
-				<nav id="menu">
-					<h2>Menu</h2>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="Resume_SuyashChitranshi_UX.pdf">Resume</a></li>
-					</ul>
-				</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<p><img width="1200px"; src="images/Talent Academy/Title.png" alt="" />
-								<img width="1200px"; src="images/Talent Academy/Overview.png" alt="" />
-								<img width="1200px"; src="images/Talent Academy/Problem.png" alt="" />
-								<img width="1200px"; src="images/Talent Academy/Constraints.png" alt="" />
-								<img width="1200px"; src="images/Talent Academy/Outcomes.png" alt="" />
-								<img width="1200px"; src="images/Talent Academy/Metrics.png" alt="" />
-								<img width="1200px"; src="images/Talent Academy/Process.png" alt="" />
-								<img width="1200px"; src="images/Talent Academy/Wireframes.png" alt="" />
-								<img width="1200px"; src="images/Talent Academy/Hi-Fi Wireframes.png" alt="" />
-								<img width="1200px"; src="images/Talent Academy/Hi-Fi Wireframes_2.png" alt="" />
-								<img width="1200px"; src="images/Talent Academy/Solutions.png" alt="" />
-								<img width="1200px"; src="images/Talent Academy/Takeaways.png" alt="" />
-								<img width="1200px"; src="images/Talent Academy/Takeaways-1.png" alt="" />
-							
-							<center><p><p><h2>More Projects</h2></center>
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/Cover.png" alt="" />
-									</span>
-									<a href="Platform.html">
-										<h2>Operations Management Platform</h2>
-										<div class="content">
-											<p>Case Study on the UX journey covered during Website</p>
-										</div>
-									</a>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="images/app_cover.jpg" alt="" />
-									</span>
-									<a href="remyfoodtruck.html">
-										<h2>Remy's Food Truck</h2>
-										<div class="content">
-											<p>Case Study on the UX journey covered during App Design</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/BSB_Brand_Guide.png" alt="" />
-									</span>
-									<a href="brandguide.html" >
-										<h2>Brand Design Guide</h2>
-										<div class="content">
-											<p>A Brand Design Guideline prepared for Bike Street Boys.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/Valley_of_Gods.jpg" alt="" />
-									</span>
-									<a href="valleyofgod.html">
-										<h2>Valley of Gods</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/Pune_Bike_Tour.png" alt="" />
-									</span>
-									<a href="punebiketour.html">
-										<h2>Pune Bike Tour</h2>
-										<div class="content">
-											<p>Flyer Design for Bike Street Boys upcoming Bicycle tour in Pune, India.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/ride_of_pi_thimbnail.png" alt="" />
-									</span>
-									<a href="infographics.html">
-										<h2>Itineraries & Infographics</h2>
-										<div class="content">
-											<p>A short description of Itineraries and Infographics created for Bike Street Boys.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/thanksgiving.jpg" alt="" />
-									</span>
-									<a href="recipe.html">
-										<h2>Recipes for Indian Cuisines</h2>
-										<div class="content">
-											<p>Infographics created for different Indian cuisines for Thanksgiving.</p>
-										</div>
-									</a>
-								</article>
-							</section>
-						</div>
-					</div>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<section>
-							<h2>Let's Connect</h2>
-							<ul class="icons">
-								<li><a href="https://www.behance.net/chitranshisuyash" class="icon brands style2 fa-behance"><span class="label">Behance</span></a></li>
-								<li><a href="https://github.com/SuyashChitranshi" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/suyashchitranshi/" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
-								<li><a href="tel:+917066628523" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-								<li><a href="mailto:chitranshi1996@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</section>
-						<ul class="copyright">
-							<li>&copy; Suyash Chitranshi. </li><li>UX Designer</li>
-						</ul>
-					</div>
-				</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+</body></html>

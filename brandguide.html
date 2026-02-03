@@ -1,47 +1,59 @@
-<!DOCTYPE HTML>
-
-<html>
-	<head>
-		<link rel="icon" href="images/logo_new_white.svg">
-		<title>Project | Brand Design Guidelines</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-				<header id="header">
-					<div class="inner">
-
-						<!-- Logo -->
-							<a href="index.html" class="logo">
-								<span class="symbol"><img src="images/logo_new.svg" alt="" /></span><span class="title">Suyash Chitranshi</span>
-							</a>
-
-						<!-- Nav -->
-							<nav>
-								<ul>
-									<li><a href="#menu">Menu</a></li>
-								</ul>
-							</nav>
-
-					</div>
-				</header>
-
-				<!-- Menu -->
-				<nav id="menu">
-					<h2>Menu</h2>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="Resume_SuyashChitranshi_UX.pdf">Resume</a></li>
-					</ul>
-				</nav>
-
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Senior UX Designer | Suyash Chitranshi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#196ee6",
+                        "background-light": "#fcfcfc",
+                        "background-dark": "#0a0c10",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .text-outline {
+                -webkit-text-stroke: 1px currentColor;
+                -webkit-text-fill-color: transparent;
+            }
+            .writing-vertical {
+                writing-mode: vertical-rl;
+            }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-gray-100 transition-colors duration-200">
+<header class="fixed top-0 left-0 w-full z-50 mix-blend-difference invert dark:invert-0">
+<div class="max-w-[1600px] mx-auto px-6 lg:px-12 py-8 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="text-xl font-black tracking-tighter uppercase leading-none"><a href="index.html">Suyash Chitranshi</a></h2>
+</div>
+<nav class="hidden md:flex items-center gap-12">
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-50 transition-opacity" href="Resume_SuyashChitranshi_UX.pdf">Resume</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:opacity-50 transition-opacity" href="about.html">About</a>
+<button class="bg-white text-black text-xs font-black uppercase tracking-widest px-6 py-3">
+            <a href="tel:+917066628523">Contact</a>  
+            </button>
+</nav>
+</div>
+</header>
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
@@ -151,27 +163,31 @@
 							</section>
 						</div>
 					</div>
-
 				<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<section>
-							<h2>Let's Connect</h2>
-							<ul class="icons">
-								<li><a href="https://www.behance.net/chitranshisuyash" class="icon brands style2 fa-behance"><span class="label">Behance</span></a></li>
-								<li><a href="https://github.com/SuyashChitranshi" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/suyashchitranshi/" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
-								<li><a href="tel:+917066628523" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-								<li><a href="mailto:chitranshi1996@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</section>
-						<ul class="copyright">
-							<li>&copy; Suyash Chitranshi. </li><li>UX Designer</li>
-						</ul>
-					</div>
-				</footer>
-
-			</div>
+				<footer class="bg-black text-white py-20">
+<div class="max-w-[1600px] mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+<div class="md:col-span-4">
+<div class="flex items-center gap-3 mb-8">
+<h2 class="text-2xl font-black tracking-tighter uppercase">Suyash Chitranshi</h2>
+</div>
+<p class="text-gray-500 text-sm font-medium">© 2026 Senior UX Designer</p>
+</div>
+<div class="md:col-span-4 md:col-start-6">
+<div class="grid grid-cols-2 gap-8 text-sm font-black uppercase tracking-widest">
+<div class="flex flex-col gap-4">
+<a class="hover:text-primary transition-colors" href="https://www.linkedin.com/in/suyashchitranshi/">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="https://www.behance.net/chitranshisuyash">Behance</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="hover:text-primary transition-colors" href="Resume_SuyashChitranshi_UX.pdf">Resume (PDF)</a>
+<a class="hover:text-primary transition-colors" href="mailto:chitranshi1996@gmail.com">Email</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -182,3 +198,4 @@
 
 	</body>
 </html>
+
