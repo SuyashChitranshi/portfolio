@@ -37,6 +37,139 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
+        /* ── IMPACT BAR ── */
+  .impact-bar {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--border); border-radius: 10px; overflow: hidden;
+    margin-bottom: 0;
+  }
+  .impact-cell {
+    padding: 32px 28px; border-right: 1px solid var(--border);
+    background: var(--bg-3); text-align: center;
+  }
+  .impact-cell:last-child { border-right: none; }
+  .impact-num {
+    font-size: 44px; font-weight: 600; letter-spacing: -0.04em;
+    color: var(--text); line-height: 1; margin-bottom: 8px;
+  }
+  .impact-desc { font-size: 13px; color: var(--text-2); line-height: 1.5; margin-bottom: 6px; }
+  .impact-note { font-size: 11px; color: var(--text-3); font-style: italic; }
+
+  /* ── INSIGHT GRID ── */
+  .insight-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 1px; margin: 36px 0;
+    border: 1px silver solid; border-radius: 10px; overflow: hidden;
+  }
+  .insight-card {
+    background: var(--bg-2); padding: 28px;
+    border-right: 1px silver solid;
+    border-bottom: 1px silver solid;
+  }
+  .insight-card:nth-child(2n) { border-right: none; }
+  .insight-card:nth-last-child(-n+2) { border-bottom: none; }
+  .insight-tag {
+    font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-3); margin-bottom: 12px;
+  }
+  .insight-card h4 {
+    font-size: 14px; font-weight: 500; color: var(--text);
+    margin-bottom: 10px; line-height: 1.4;
+  }
+  .insight-card p { font-size: 13px; color: var(--text-2); line-height: 1.65; margin: 0; }
+
+  /* ── TENSION BOX ── */
+  .tension-box {
+    border: 1px silver solid ; border-radius: 10px;
+    overflow: hidden; margin: 36px 0;
+  }
+  .tension-header {
+    background: whitesmoke; padding: 14px 24px;
+    font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-3); border-bottom: 1px silver solid;
+  }
+  .tension-body { display: grid; grid-template-columns: 1fr 1fr; }
+  .tension-side {
+    padding: 28px; background: white;
+  }
+  .tension-side:first-child { border-right: 1px silver solid ; }
+  .tension-side-label {
+    font-size: 10px; font-weight: 500; color: var(--text-3);
+    margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  .tension-side h4 { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 10px; }
+  .tension-side p { font-size: 13px; color: var(--text-2); margin: 0; line-height: 1.65; }
+  .tension-resolution {
+    padding: 24px; background: whitesmoke;
+    border-top: 1px silver solid ;
+  }
+  .tension-resolution-label {
+    font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-3); margin-bottom: 10px;
+  }
+  .tension-resolution p { font-size: 14px; color: var(--text-2); margin: 0; line-height: 1.65; }
+
+  /* ── ALERT BLOCK (didn't work / pushback) ── */
+  .alert-block {
+    border: 1px silver solid ; border-radius: 8px;
+    padding: 28px; margin: 20px 0; background: whitesmoke;
+  }
+  .alert-label {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+    color: grey; margin-bottom: 14px;
+  }
+  .alert-label::before {
+    content: ''; display: block; width: 5px; height: 5px;
+    border-radius: 50%; background: red; flex-shrink: 0;
+  }
+  .alert-block h4 { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 10px; }
+  .alert-block p { font-size: 13px; color: var(--text-2); margin: 0; line-height: 1.7; }
+
+  /* ── EVIDENCE BLOCK ── */
+  .evidence-block {
+    display: flex; gap: 20px; align-items: flex-start;
+    border: 1px silver solid; border-radius: 8px;
+    padding: 24px; margin: 16px 0; background: whitesmoke;
+  }
+  .evidence-icon {
+    width: 36px; height: 36px; border-radius: 6px;
+    background: whitesmoke;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; font-size: 16px;
+  }
+  .evidence-text h4 { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 8px; }
+  .evidence-text p { font-size: 13px; color: var(--text-2); margin: 0; line-height: 1.65; }
+
+  /* ── REFLECTION GRID ── */
+  .reflection-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1px; margin: 36px 0;
+    border: 1px silver solid ; border-radius: 10px; overflow: hidden;
+  }
+  .reflection-card {
+    background: whitesmoke; padding: 28px;
+    border-right: 1px silver solid;
+  }
+  .reflection-card:last-child { border-right: none; }
+  .reflection-card h4 { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
+  .reflection-card p { font-size: 13px; color: var(--text-2); line-height: 1.65; margin: 0; }
+
+  /* ── STATUS PILL ── */
+  .status-pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px;
+    color: var(--text-2);
+    font-size: 12px; font-weight: 400; padding: 5px 14px;
+    border-radius: 100px; margin-bottom: 20px;
+    background: rgb(231, 231, 231);
+  }
+  .status-dot {
+    width: 6px; height: 6px; border-radius: 50%; background: green;
+    animation: pulse 2.4s infinite;
+  }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-gray-100 transition-colors duration-200">
@@ -63,40 +196,57 @@
 <span class="text-accent-muted font-bold tracking-[0.3em] text-[10px] uppercase">Enterprise Workforce & Operations Management</span>
 <h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-balance">From Fragmented Workflows to Unified Platform</h1>
 <p class="text-xl md:text-2xl text-stone-500 dark:text-gray-400 font-light max-w-2xl leading-relaxed">
-                            Redesigning a data-heavy internal platform to simplify complex workflows and improve operational clarity at scale.
+                            How I identified a systemic operations problem, initiated the design project, and led a 10-month redesign that changed how 1,000+ enterprise users track, evaluate, and manage work.
                         </p>
 </div>
+</div>
+<div class="lg:w-7/12 flex flex-col gap-8">
+<div class="p-6 border border-stone-border bg-stone-200 dark:bg-stone-900/20 rounded-sm" style="background: whitesmoke;">
+        <span>This project is covered by client NDA. UI screens shown are recreated abstractions, not the shipped product. Metrics are directional estimates validated with stakeholders, not exact figures from production analytics.</span>
+  </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
 <div class="p-6 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm">
 <p class="text-[10px] uppercase tracking-[0.2em] text-accent-muted font-bold mb-3">The Role</p>
 <p class="text-sm font-medium">UX/Product Designer</p>
-<p class="text-xs text-stone-400 mt-1">User Flows, Interaction Design, wireframes, High-Fidelity UI, Stakeholder collaboration</p>
+<p class="text-xs text-stone-400 mt-1">Usole designer, self-initiated</p>
 </div>
 <div class="p-6 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm">
 <p class="text-[10px] uppercase tracking-[0.2em] text-accent-muted font-bold mb-3">The Timeline</p>
 <p class="text-sm font-medium">10 Months (2025)</p>
 <p class="text-xs text-stone-400 mt-1">From Discovery to Soft Launch</p>
 </div>
+<div class="p-6 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm">
+<p class="text-[10px] uppercase tracking-[0.2em] text-accent-muted font-bold mb-3">Methods</p>
+<p class="text-sm font-medium">User interviews, Contextual Observation, Usability Testing, Stakeholder Workshops</p>
+</div>
+<div class="p-6 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm">
+<p class="text-[10px] uppercase tracking-[0.2em] text-accent-muted font-bold mb-3">Tools</p>
+<p class="text-sm font-medium">Figma, Microsoft PowerPoint</p>
 </div>
 </div>
-<div class="lg:w-5/12 w-full lg:sticky lg:top-40">
-<div class="p-8 border-l-2 border-accent/20 bg-stone-light/50 dark:bg-stone-900/10">
-<div class="flex flex-col gap-8">
-<div>
-<p class="text-[10px] uppercase tracking-[0.2em] text-accent-muted font-bold mb-2">Tools</p>
-<p class="text-sm">Figma, Microsoft Powerpoint</p>
+</div>
+</div>
+<div class="lg:w-12/12 flex flex-col gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
+    <div class="p-10 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm text-align" style="text-align: center">
+      <div class="impact-num">−72%</div>
+      <div class="impact-desc">Form submission errors</div>
+      <div class="impact-note">Directional — validated in stakeholder review</div>
+    </div>
+    <div class="p-10 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm" style="text-align: center">
+      <div class="impact-num">−60%</div>
+      <div class="impact-desc">Manual PMO coordination effort</div>
+      <div class="impact-note">Directional — validated in stakeholder review</div>
+    </div>
+    <div class="p-10 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm" style="text-align: center">
+      <div class="impact-num">+65%</div>
+      <div class="impact-desc">Operations dashboard adoption</div>
+      <div class="impact-note">Pilot group, soft launch phase</div>
+    </div>
+  </div>
+</div>
 </div>
 
-<div class="pt-6 border-t border-stone-border">
-<p class="text-[10px] uppercase tracking-[0.2em] text-accent font-bold mb-2">Primary Impact</p>
-<p class="text-4xl font-light text-accent">85% <span class="text-sm font-normal text-stone-400 uppercase tracking-widest">Increase in Automated follow-ups</span></p><br>
-<p class="text-4xl font-light text-accent">2x <span class="text-sm font-normal text-stone-400 uppercase tracking-widest">Faster Risk Detection</span></p><br>
-<p class="text-4xl font-light text-accent">40% <span class="text-sm font-normal text-stone-400 uppercase tracking-widest">Faster Evaluation Submission</span></p>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class="mt-20 @container">
 <div class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-stone-200 rounded-sm min-h-[500px] md:min-h-[700px] shadow-2xl" style="background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0)), url('images/EnterprisePlatform/Title.png');">
 <div class="p-12 md:p-20">
@@ -113,25 +263,24 @@
 <section class="mb-40" id="problem">
 <div class="flex flex-col md:flex-row gap-12 items-baseline mb-12">
 <span class="text-stone-300 text-6xl font-light shrink-0">01</span>
-<h2 class="text-4xl md:text-5xl font-bold tracking-tight">The Problem: Navigating Existing Fragmented Processes</h2>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">I initiated this. Here's why.</h2>
 </div>
 <div class="space-y-8">
 <p class="text-2xl leading-relaxed text-stone-600 dark:text-stone-300 font-light italic">
-                            Users struggled to navigate and understand the existing workflow due to fragmented information, unclear process states, and inconsistent interaction patterns.
+                            This project didn't come through a product roadmap or a brief. A conversation with a senior manager about reporting delays made me start asking questions. The more I asked, the more I realised the problem wasn't one broken tool — it was an entire ecosystem of disconnected ones.</p>
+<p class="text-lg leading-relaxed text-stone-500 dark:text-stone-400 max-w-8xl">
+                            PMO members were managing delivery tracking across emails, spreadsheets, and manual documents simultaneously. Managers were waiting on evaluation submissions that had no status visibility. Timesheet approvals were happening outside the system entirely. Nobody had named this as a design problem. I did.
                         </p>
-<p class="text-lg leading-relaxed text-stone-500 dark:text-stone-400 max-w-3xl">
-                            As workflows grew in complexity, users found it difficult to track progress, identify blockers, and confidently complete tasks, leading to increased dependency on manual follow-ups and stakeholder clarification.
-                        </p>
-<p class="text-lg leading-relaxed text-stone-500 dark:text-stone-400 max-w-3xl">
-                            From a business perspective, this resulted in inefficiencies, delayed decisions, and higher risk of operational errors.
+<p class="text-lg leading-relaxed text-stone-500 dark:text-stone-400 max-w-8xl">
+                            I put together a lightweight business case framing the operational cost of the fragmentation and got stakeholder buy-in to begin a structured discovery phase.
                         </p>
 <div class="bg-white dark:bg-stone-900 border border-stone-border p-10 rounded-sm mt-12 editorial-shadow max-w-3xl">
 <p class="text-[10px] font-bold text-accent uppercase tracking-[0.3em] mb-6 flex items-center gap-2">
 <span class="material-symbols-outlined text-sm">warning</span> Core Pain Point
                             </p>
 <blockquote class="text-xl text-stone-800 dark:text-stone-200 font-light border-l-2 border-accent pl-8 italic">
-                                "I spend 4 hours a day just filtering through spreadsheets to track delivery progress due to inconsistent reporting formats." 
-                                <footer class="text-xs uppercase tracking-widest text-stone-400 mt-4 font-bold">— Project Management Office</footer>
+                                "I spend 4 hours a day just filtering through spreadsheets to track delivery progress because none of the reporting formats match."
+                                <footer class="text-xs uppercase tracking-widest text-stone-400 mt-4 font-bold">— PMO member, initial discovery conversation</footer>
 </blockquote>
 </div>
 </div>
@@ -177,60 +326,78 @@
 <section class="mb-40" id="process">
 <div class="flex flex-col md:flex-row gap-12 items-baseline mb-12">
 <span class="text-stone-300 text-6xl font-light shrink-0">02</span>
-<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Expected Outcomes</h2>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">What I found — and what surprised me.</h2>
 </div>
 <div class="space-y-12">
-<p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-3xl">
-                            The redesigned workflow improved clarity around task status, ownership, and next steps, enabling users to complete processes with greater confidence and reduced reliance on external clarification.
-                        </p>
-<p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-3xl">
-                            Stakeholders reported improved usability and better alignment between the UI and underlying system logic, which helped streamline day-to-day operations and reduce workflow friction.
-<div class="overflow-hidden rounded-sm border border-stone-border editorial-shadow bg-white dark:bg-stone-900/40">
-<table class="w-full text-left border-collapse">
-<thead class="bg-stone-light dark:bg-stone-800/50">
-<tr>
-<th class="px-8 py-6 text-[10px] font-bold uppercase tracking-[0.2em] text-accent-muted">Expected Outcomes</th>
-<th class="px-8 py-6 text-[10px] font-bold uppercase tracking-[0.2em] text-accent-muted">Description</th>
+<p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-8xl">
+                            I conducted interviews and contextual observation sessions with more than 10 users across PMO, operations, and management roles. I also reviewed existing workflow analytics and ran a collaborative discovery workshop with key stakeholders to surface assumptions early.</p>
+<p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-8xl">
+                            Going in, the assumed problem was reporting inconsistency. What the research revealed was significantly broader: every major task in the workflow — evaluation submission, delivery tracking, timesheet approvals, and report generation — was taking far longer than anyone had estimated. The system wasn't just inconsistent. It was fundamentally unfit for the work it was supposed to support.
 
-</tr>
-</thead>
-<tbody class="divide-y divide-stone-border dark:divide-gray-800">
-<tr class="hover:bg-stone-light/50 transition-colors">
-<td class="px-8 py-8 text-sm font-bold text-stone-800 dark:text-stone-200">Reduce evaluation time</td>
-<td class="px-8 py-8 text-sm text-stone-500">This directly addressed the issue where 62% of interviewers reported delays due to manual evaluation submission</td>
-</tr>
-<tr class="hover:bg-stone-light/50 transition-colors">
-<td class="px-8 py-8 text-sm font-bold text-stone-800 dark:text-stone-200">Enable real-time operational visibility</td>
-<td class="px-8 py-8 text-sm text-stone-500">This outcome targeted the problem where 68% of managers lacked real-time visibility into pending evaluations and timesheets.</td>
-</tr>
-<tr class="hover:bg-stone-light/50 transition-colors">
-<td class="px-8 py-8 text-sm font-bold text-stone-800 dark:text-stone-200">Automate workflows</td>
-<td class="px-8 py-8 text-sm text-stone-500">This was intended to eliminate the need for manual follow-ups across teams, which was a major user pain point.</td>
-</tr>
-<tr class="hover:bg-stone-light/50 transition-colors">
-<td class="px-8 py-8 text-sm font-bold text-stone-800 dark:text-stone-200">Increase standardization across teams</td>
-<td class="px-8 py-8 text-sm text-stone-500">This was crucial because 71% of PMO members struggled to track delivery progress due to inconsistent reporting formats.</td>
-</tr>
-</tbody>
-</table>
-</div>
+<div class="insight-grid">
+      <div class="insight-card">
+        <div class="insight-tag">Finding 01</div>
+        <h4>Evaluation submission was the biggest time sink</h4>
+        <p>Users had to cross-reference three separate tools to complete a single submission. When we mapped the full task path, the number of steps was almost double what stakeholders assumed.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-tag">Finding 02</div>
+        <h4>Managers had no visibility without chasing</h4>
+        <p>There was no live status layer. Managers were sending follow-up messages to get updates that should have been surfaced automatically — producing an entire shadow communication workflow.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-tag">Finding 03</div>
+        <h4>Timesheets were completed outside the system</h4>
+        <p>Users had lost trust in the timesheet module and maintained personal records in spreadsheets, then back-filled the system — meaning system data was consistently stale.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-tag">Finding 04</div>
+        <h4>Reporting formats varied by team</h4>
+        <p>Without standardised output formats, PMO members manually reformatted data from different teams before they could act on it — adding 2–3 hours per reporting cycle.</p>
+      </div>
+    </div>
+<p>The research also surfaced a tension I hadn't anticipated — one that would shape the core design challenge of the entire project.</p>
+
+    <div class="tension-box">
+      <div class="tension-header">Core design tension — two user groups, conflicting needs</div>
+      <div class="tension-body">
+        <div class="tension-side">
+          <div class="tension-side-label">Managers</div>
+          <h4>Needed speed above all</h4>
+          <p>Approval queues were long. Managers wanted one-click actions, minimal reading, and fast resolution. Any additional steps felt like friction.</p>
+        </div>
+        <div class="tension-side">
+          <div class="tension-side-label">Frontline users</div>
+          <h4>Needed guided steps for accuracy</h4>
+          <p>Errors in submissions had downstream consequences. Users needed confirmation states, clear field validation, and step-by-step structure to submit with confidence.</p>
+        </div>
+      </div>
+      <div class="tension-resolution">
+        <div class="tension-resolution-label">How I resolved it</div>
+        <p>Rather than designing two entirely separate flows, I used progressive disclosure and role-based views — managers saw a summary-first dashboard with inline approval actions, while submitting users went through a structured guided flow. Both paths existed within the same system, triggered by role context rather than separate interfaces.</p>
+      </div>
+    </div>
+  </div>
+    
+
 </div>
 </section>
 <section class="mb-40" id="decisions">
 <div class="flex flex-col md:flex-row gap-12 items-baseline mb-16">
 <span class="text-stone-300 text-6xl font-light shrink-0">03</span>
-<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Key Design Decisions</h2>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">The Decisions — and what didn't make it.</h2>
 </div>
 <div class="flex flex-col gap-32">
 <div class="flex flex-col gap-12">
+    <p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-8xl">
+                            The core design concept was a combination of a role-based dashboard and contextual guided flows. Managers got a high-density summary view with inline actions. Users got a task-focused step-by-step interface that reduced cognitive load at the point of action. The system knew who you were and showed you the right surface.</p>
 <div class="max-w-8xl">
 <div class="inline-block border-b-2 border-accent mb-6">
 <p class="text-[10px] font-bold uppercase tracking-[0.3em] pb-1 text-accent">Decision #1</p>
 </div>
-<h3 class="text-3xl font-bold mb-6">Unification of Disparate Workflows</h3>
+<h3 class="text-3xl font-bold mb-6">Unifying four workflows into one ecosystem</h3>
 <p class="text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
-                                    The most significant decision was to consolidate disconnected tools—such as emails, spreadsheets, and manual documents—into a single centralized ecosystem. This eliminated the "fragmented workflow" pain point by housing employee evaluations, timesheet tracking, and delivery monitoring in one place, which reduced the time users spent manually gathering updates across various platforms.
-                                </p>
+                                    The most consequential decision was consolidating evaluation submission, timesheet tracking, delivery monitoring, and report generation into a single platform — linked by a shared status model. Navigation was restructured around task type rather than module, which reduced orientation time significantly in testing. For the first time, PMOs had a single source of truth.</p>
 </div>
 <div class="bg-stone-light dark:bg-stone-900 p-4 rounded-sm border border-stone-border editorial-shadow">
 <div class="bg-stone-200 flex items-center justify-center relative overflow-hidden" data-alt="Close up of a data grid with color-coded status indicators">
@@ -253,10 +420,9 @@
 <div class="inline-block border-b-2 border-accent mb-6">
 <p class="text-[10px] font-bold uppercase tracking-[0.3em] pb-1 text-accent">Decision #2</p>
 </div>
-<h3 class="text-3xl font-bold mb-6">Transition to Structured Forms and Unified Actions</h3>
+<h3 class="text-3xl font-bold mb-6">Structured forms with mandatory field logic</h3>
 <p class="text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
-                                    The design team replaced cluttered, inconsistent layouts with structured forms and simplified timesheets. This decision directly addressed the 71% of PMO members who previously struggled with inconsistent reporting formats. By implementing unified workflow actions, the platform achieved a 72% reduction in form errors and inconsistencies
-                                </p>
+                                    Replacing freeform inputs with structured, validated forms directly addressed the inconsistency problem. Field logic meant certain fields only appeared when relevant, keeping the form shorter without losing completeness. Error rates in usability testing dropped substantially compared to the previous format.</p>
 </div>
 <div class="bg-stone-light dark:bg-stone-900 rounded-sm border border-stone-border p-4 editorial-shadow">
 <div class="bg-stone-200 flex items-center justify-center relative overflow-hidden" data-alt="Side drawer UI showing detailed shipment history and documentation">
@@ -264,41 +430,97 @@
 </div>
 </div>
 </div>
+<div class="flex flex-col gap-12">
+<div class="max-w-8xl">
+<div class="inline-block border-b-2 border-accent mb-6">
+<p class="text-[10px] font-bold uppercase tracking-[0.3em] pb-1 text-accent">Decision #3</p>
+</div>
+<h3 class="text-3xl font-bold mb-6">Inline actions on the dashboard surface</h3>
+<p class="text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
+                                    Rather than requiring managers to navigate into a detail view to approve or flag items, I brought common actions directly onto the dashboard row. This was the single biggest speed improvement for the manager workflow — resolving the core tension between manager speed and user accuracy without removing required steps from the submission side.</p>
+</div>
+</div>
+</div>
+<div class="">
+<div class="alert-block">
+      <div class="alert-label">What didn't make it — legacy constraint</div>
+      <h4>A fully automated follow-up workflow wasn't buildable</h4>
+      <p>Early on, I designed an automated notification and escalation system that would trigger follow-ups without any manual action — the cleanest solution to the shadow communication problem. But the legacy backend couldn't support event-driven triggers without a core re-architecture that was out of scope. I redesigned around the constraint: shifting from full automation to a semi-automated prompt system that reduced manual effort without requiring backend changes.</p>
+    </div>
+    <div class="alert-block">
+      <div class="alert-label">Stakeholder pushback — and how I responded</div>
+      <h4>Managers pushed back on workflow simplification. I held my ground.</h4>
+      <p>When I presented the simplified approval flow, two senior managers argued it removed controls they felt were necessary — their concern was that fewer steps would lead to uninformed approvals. Rather than compromising immediately, I ran a targeted usability test asking managers to complete approval tasks in both the old and new flows while I observed. The simplified flow produced faster completions with no increase in errors. I brought the test recordings and task-time data directly into the next stakeholder review. Both managers came around. The design shipped without the additional steps they had originally requested.</p>
+    </div>
+  </div>
 </div>
 </section>
+
 <section class="mb-40 pt-24 border-t border-stone-border" id="outcome">
 <div class="flex flex-col md:flex-row gap-12 items-baseline mb-16">
 <span class="text-stone-300 text-6xl font-light shrink-0">04</span>
-<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Outcome &amp; Impact</h2>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">How I tested and what it told me.</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
-<div class="bg-stone-light dark:bg-stone-900/50 p-12 border border-stone-border text-center">
-<p class="text-6xl font-light text-accent mb-4">-72%</p>
-<p class="text-[10px] font-bold uppercase text-stone-400 tracking-[0.2em] mb-4">Form Errors</p>
-<p class="text-xs text-stone-500 leading-relaxed">Reduction in Form Submission Errors.</p>
+<p>Validation ran in two parallel tracks — structured usability testing with users and structured design review sessions with stakeholders. Running them in parallel rather than sequentially let me catch usability issues and alignment gaps in the same sprint cycle.</p>
+
+    <div class="evidence-block">
+      <div class="evidence-icon">🧪</div>
+      <div class="evidence-text">
+        <h4>Usability testing</h4>
+        <p>I ran moderated task-based sessions with users across both roles — PMO members completing a full reporting cycle and managers working through an approval queue. Sessions were observed and timed. Key signals were task completion rate, error frequency, and time-on-task. Findings were prioritised and actioned within the following sprint. Design revision cycles dropped from 11 to 4 per sprint as the design stabilised.</p>
+      </div>
+    </div>
+
+    <div class="evidence-block">
+      <div class="evidence-icon">📋</div>
+      <div class="evidence-text">
+        <h4>Stakeholder reviews</h4>
+        <p>I restructured the review cadence early in the project — replacing open-ended feedback sessions with structured walkthroughs tied to specific design decisions. Each review had a stated goal and a defined list of open questions I needed resolved. Approval rounds dropped from 5 to 2 by eliminating the ambiguity that had been driving repeated cycles.</p>
+      </div>
+    </div>
+</section>
+
+<section class="mb-40 pt-24 border-t border-stone-border" id="outcome">
+<div class="flex flex-col md:flex-row gap-12 items-baseline mb-16">
+<span class="text-stone-300 text-6xl font-light shrink-0">05</span>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Where it landed.</h2>
 </div>
-<div class="bg-stone-light dark:bg-stone-900/50 p-12 border border-stone-border text-center">
-<p class="text-6xl font-light text-accent mb-4">-60%</p>
-<p class="text-[10px] font-bold uppercase text-stone-400 tracking-[0.2em] mb-4">Manual PMO Coordination</p>
-<p class="text-xs text-stone-500 leading-relaxed">Decrease in Tracking task for PMOs & Managers.</p>
+<div class="status-pill"><span class="status-dot"></span> Soft-launched with pilot group</div>
+    <p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-8xl">The platform soft-launched with a pilot user group following the 10-month design and development cycle. Early pilot feedback confirmed the directional improvements — dashboard adoption increased significantly, manual coordination effort reduced, and form error rates dropped. Full rollout is in progress.</p>
+    <br><p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-8xl">The metrics shown are directional estimates validated with stakeholders, not exact figures from production analytics. Where precise numbers aren't available, the qualitative signal from the pilot is consistent: users are completing tasks with less friction, and PMOs are spending less time on coordination work the system is now handling.</p>
+
+</section>
+
+<section class="mb-40 pt-24 border-t border-stone-border" id="outcome">
+<div class="flex flex-col md:flex-row gap-12 items-baseline mb-16">
+<span class="text-stone-300 text-6xl font-light shrink-0">06</span>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">What I'd do differently.</h2>
 </div>
-<div class="bg-stone-light dark:bg-stone-900/50 p-12 border border-stone-border text-center">
-<p class="text-6xl font-light text-accent mb-4">+65%</p>
-<p class="text-[10px] font-bold uppercase text-stone-400 tracking-[0.2em] mb-4">Dashboard Usage</p>
-<p class="text-xs text-stone-500 leading-relaxed">Increase in Operations Dashbpard Usage.</p>
-</div>
-</div>
-<div class="bg-stone-light dark:bg-stone-900 border border-stone-border p-12 md:p-24 rounded-sm relative overflow-hidden editorial-shadow">
-<span class="material-symbols-outlined absolute -right-8 -bottom-8 text-[200px] text-accent/5 select-none">format_quote</span>
-<div class="max-w-3xl relative z-10">
-<p class="text-3xl md:text-4xl font-light leading-tight italic text-stone-800 dark:text-stone-100">
-                                "This redesign reinforced the importance of designing for clarity in complex, system-driven workflows rather than visual polish alone, investing more time in early validation with a wider range of user roles to further refine edge cases and exception handling."
-                            </p>
-<div class="mt-12 flex items-center gap-6">
-<div class="size-14 bg-accent rounded-full flex items-center justify-center text-white text-xl font-light">JD</div>
-</div>
-</div>
-</div>
+<p>Three things I'd change if I started this project again:</p>
+
+    <div class="reflection-grid">
+      <div class="reflection-card">
+        <h4>Involve managers in research earlier</h4>
+        <p>The pushback in the design phase would have been smaller if managers had been part of the discovery workshops. I learned their mental models too late, which cost time in the alignment phase.</p>
+      </div>
+      <div class="reflection-card">
+        <h4>Budget more time for edge case testing</h4>
+        <p>Core flows tested well, but edge cases — exception states, partial submissions, cross-role handoffs — got less testing time than they deserved. Some surfaced in the pilot and required design revisions.</p>
+      </div>
+      <div class="reflection-card">
+        <h4>Build in an alignment buffer</h4>
+        <p>Even with a structured review process, stakeholder alignment took longer than planned. I now treat alignment as a planned phase in any project I initiate — not a contingency.</p>
+      </div>
+    </div>
+<div class="bg-white dark:bg-stone-900 border border-stone-border p-10 rounded-sm mt-12 editorial-shadow max-w-3xl">
+<blockquote class="text-xl text-stone-800 dark:text-stone-200 font-light border-l-2 border-accent pl-8 italic">
+                                "This project reinforced that designing for clarity in complex, system-driven workflows matters more than visual polish — and that bringing evidence into the room is the most effective way to hold a design position."
+                                <footer class="text-xs uppercase tracking-widest text-stone-400 mt-4 font-bold">— Suyash Chitranshi</footer>
+</blockquote>
+</div> 
+</section>
+
+<section>
 <div class="mt-40 text-center flex flex-col items-center">
 <h3 class="text-2xl font-light mb-10 max-w-md">Want to dive deeper into the process behind this transformation?</h3>
 <div class="flex flex-col sm:flex-row justify-center gap-6 w-full max-w-lg">
@@ -306,7 +528,7 @@
                                 <a href="https://www.behance.net/gallery/239687371/Enterprise-Workforce-Operations-Management-Platform">Check Full Case Study on Behance</a>
                                 <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </button>
-</div>
+</div><br><br>
 </div>
 </section>
 <section class="mb-40 pt-24 border-t border-stone-border" id="more-projects">

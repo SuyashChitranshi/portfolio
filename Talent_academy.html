@@ -37,6 +37,151 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
+
+           /* ── IMPACT BAR ── */
+  .impact-bar {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--border); border-radius: 10px; overflow: hidden;
+    margin-bottom: 0;
+  }
+  .impact-cell {
+    padding: 32px 28px; border-right: 1px solid var(--border);
+    background: var(--bg-3); text-align: center;
+  }
+  .impact-cell:last-child { border-right: none; }
+  .impact-num {
+    font-size: 44px; font-weight: 600; letter-spacing: -0.04em;
+    color: var(--text); line-height: 1; margin-bottom: 8px;
+  }
+  .impact-desc { font-size: 13px; color: var(--text-2); line-height: 1.5; margin-bottom: 6px; }
+  .impact-note { font-size: 11px; color: var(--text-3); font-style: italic; }
+
+  /* ── INSIGHT GRID ── */
+  .insight-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 1px; margin: 36px 0;
+    border: 1px silver solid; border-radius: 10px; overflow: hidden;
+  }
+  .insight-card {
+    background: var(--bg-2); padding: 28px;
+    border-right: 1px silver solid;
+    border-bottom: 1px silver solid;
+  }
+  .insight-card:nth-child(2n) { border-right: none; }
+  .insight-card:nth-last-child(-n+2) { border-bottom: none; }
+  .insight-tag {
+    font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-3); margin-bottom: 12px;
+  }
+  .insight-card h4 {
+    font-size: 14px; font-weight: 500; color: var(--text);
+    margin-bottom: 10px; line-height: 1.4;
+  }
+  .insight-card p { font-size: 13px; color: var(--text-2); line-height: 1.65; margin: 0; }
+
+  /* ── TENSION BOX ── */
+  .tension-box {
+    border: 1px silver solid ; border-radius: 10px;
+    overflow: hidden; margin: 36px 0;
+  }
+  .tension-header {
+    background: whitesmoke; padding: 14px 24px;
+    font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-3); border-bottom: 1px silver solid;
+  }
+  .tension-body { display: grid; grid-template-columns: 1fr 1fr; }
+  .tension-side {
+    padding: 28px; background: white;
+  }
+  .tension-side:first-child { border-right: 1px silver solid ; }
+  .tension-side-label {
+    font-size: 10px; font-weight: 500; color: var(--text-3);
+    margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  .tension-side h4 { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 10px; }
+  .tension-side p { font-size: 13px; color: var(--text-2); margin: 0; line-height: 1.65; }
+  .tension-resolution {
+    padding: 24px; background: whitesmoke;
+    border-top: 1px silver solid ;
+  }
+  .tension-resolution-label {
+    font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-3); margin-bottom: 10px;
+  }
+  .tension-resolution p { font-size: 14px; color: var(--text-2); margin: 0; line-height: 1.65; }
+
+  /* ── ALERT BLOCK (didn't work / pushback) ── */
+  .alert-block {
+    border: 1px silver solid ; border-radius: 8px;
+    padding: 28px; margin: 20px 0; background: whitesmoke;
+  }
+  .alert-label {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+    color: grey; margin-bottom: 14px;
+  }
+  .alert-label::before {
+    content: ''; display: block; width: 5px; height: 5px;
+    border-radius: 50%; background: red; flex-shrink: 0;
+  }
+  .alert-block h4 { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 10px; }
+  .alert-block p { font-size: 13px; color: var(--text-2); margin: 0; line-height: 1.7; }
+
+  /* ── EVIDENCE BLOCK ── */
+  .evidence-block {
+    display: flex; gap: 20px; align-items: flex-start;
+    border: 1px silver solid; border-radius: 8px;
+    padding: 24px; margin: 16px 0; background: whitesmoke;
+  }
+  .evidence-icon {
+    width: 36px; height: 36px; border-radius: 6px;
+    background: whitesmoke;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; font-size: 16px;
+  }
+  .evidence-text h4 { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 8px; }
+  .evidence-text p { font-size: 13px; color: var(--text-2); margin: 0; line-height: 1.65; }
+
+  /* ── REFLECTION GRID ── */
+  .reflection-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin: 36px 0; border: 1px silver solid; border-radius: 10px; overflow: hidden; }
+  .reflection-card { background: whitesmoke; padding: 28px; border-right: 1px silver solid ; }
+  .reflection-card:last-child { border-right: none; }
+  .reflection-card h4 { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 10px; line-height: 1.4; }
+  .reflection-card p { font-size: 13px; color: var(--text-2); line-height: 1.65; margin: 0; }
+
+
+  /* ── STATUS PILL ── */
+  .status-pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px;
+    color: var(--text-2);
+    font-size: 12px; font-weight: 400; padding: 5px 14px;
+    border-radius: 100px; margin-bottom: 20px;
+    background: rgb(231, 231, 231);
+  }
+  .status-dot {
+    width: 6px; height: 6px; border-radius: 50%; background: green;
+    animation: pulse 2.4s infinite;
+  }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+  /* ── TWO-SIDED PROBLEM ── */
+  .two-sided {
+    display: grid; grid-template-columns: 1fr 1fr;
+    border: 1px silver solid ; border-radius: 10px; overflow: hidden; margin: 36px 0;
+  }
+  .two-sided-header {
+    grid-column: 1 / -1;
+    background: whitesmoke; padding: 14px 24px;
+    font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-3); border-bottom: 1px silver solid ;
+  }
+  .two-sided-cell { padding: 28px; background: var(--bg-2); }
+  .two-sided-cell:first-of-type { border-right: 1px silver solid; }
+  .two-sided-label { font-size: 10px; font-weight: 500; color: var(--text-3); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .two-sided-cell h4 { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 10px; }
+  .two-sided-cell p { font-size: 13px; color: var(--text-2); margin: 0; line-height: 1.65; }
+
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-gray-100 transition-colors duration-200">
@@ -63,38 +208,53 @@
 <span class="text-accent-muted font-bold tracking-[0.3em] text-[10px] uppercase">Enterprise E-Learning Platform</span>
 <h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-balance">Designing a scalable, role-based learning experience</h1>
 <p class="text-xl md:text-2xl text-stone-500 dark:text-gray-400 font-light max-w-2xl leading-relaxed">
-                            Designed to enable employees, managers, and administrators to discover, consume, track, and manage learning programs efficiently.
-                        </p>
+                            How I joined a struggling LMS project and redesigned the learner and admin experience — uncovering a two-sided platform problem that the original brief had only half addressed.</p>
 </div>
+</div>
+<div class="lg:w-7/12 flex flex-col gap-8">
+<div class="p-6 border border-stone-border bg-stone-200 dark:bg-stone-900/20 rounded-sm" style="background: whitesmoke;">
+        <span>This project is covered by client NDA. UI screens shown are recreated abstractions, not the shipped product. Metrics are directional estimates validated with stakeholders, not exact figures from production analytics.</span>
+  </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
 <div class="p-6 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm">
 <p class="text-[10px] uppercase tracking-[0.2em] text-accent-muted font-bold mb-3">The Role</p>
 <p class="text-sm font-medium">UX Designer</p>
-<p class="text-xs text-stone-400 mt-1">User Flows, Interaction Design, wireframes, High-Fidelity UI, Stakeholder collaboration</p>
+<p class="text-xs text-stone-400 mt-1">Joined at definition stage</p>
 </div>
 <div class="p-6 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm">
 <p class="text-[10px] uppercase tracking-[0.2em] text-accent-muted font-bold mb-3">The Timeline</p>
 <p class="text-sm font-medium">12 Months (2023-24)</p>
 <p class="text-xs text-stone-400 mt-1">From Discovery to Launch</p>
 </div>
+<div class="p-6 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm">
+<p class="text-[10px] uppercase tracking-[0.2em] text-accent-muted font-bold mb-3">Methods</p>
+<p class="text-sm font-medium">User Interviews, Collaborative Discovery Workshops, Usability Testing, Stakeholder Reviews</p>
 </div>
-</div>
-<div class="lg:w-5/12 w-full lg:sticky lg:top-40">
-<div class="p-8 border-l-2 border-accent/20 bg-stone-light/50 dark:bg-stone-900/10">
-<div class="flex flex-col gap-8">
-<div>
-<p class="text-[10px] uppercase tracking-[0.2em] text-accent-muted font-bold mb-2">Tools</p>
-<p class="text-sm">Adobe XD, Microsoft Powerpoint, Adobe Illustrator</p>
-</div>
-
-<div class="pt-6 border-t border-stone-border">
-<p class="text-[10px] uppercase tracking-[0.2em] text-accent font-bold mb-2">Primary Impact</p>
-<p class="text-4xl font-light text-accent">35% <span class="text-sm font-normal text-stone-400 uppercase tracking-widest">Increase in Course Completion Rates</span></p><br>
-<p class="text-4xl font-light text-accent">25% <span class="text-sm font-normal text-stone-400 uppercase tracking-widest">Reduced Perceived Mental Effort</span></p><br>
-<p class="text-4xl font-light text-accent">40% <span class="text-sm font-normal text-stone-400 uppercase tracking-widest">Drop in User Frustration Levels</span></p>
+<div class="p-6 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm">
+<p class="text-[10px] uppercase tracking-[0.2em] text-accent-muted font-bold mb-3">Tools</p>
+<p class="text-sm font-medium">Adobe XD, Adobe Illustrator, Microsoft PowerPoint</p>
 </div>
 </div>
 </div>
+</div>
+<div class="lg:w-12/12 flex flex-col gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
+    <div class="p-10 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm text-align" style="text-align: center">
+      <div class="impact-num">+35%</div>
+      <div class="impact-desc">Course completion rates</div>
+      <div class="impact-note">Directional — validated in stakeholder review</div>
+    </div>
+    <div class="p-10 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm" style="text-align: center">
+      <div class="impact-num">94%</div>
+      <div class="impact-desc">Task success rate in usability testing</div>
+      <div class="impact-note">Moderated sessions, core learner tasks</div>
+    </div>
+    <div class="p-10 border border-stone-border bg-stone-light dark:bg-stone-900/20 rounded-sm" style="text-align: center">
+      <div class="impact-num">−25%</div>
+      <div class="impact-desc">Perceived mental effort</div>
+      <div class="impact-note">Directional — validated in stakeholder review</div>
+    </div>
+  </div>
 </div>
 </div>
 <div class="mt-20 @container">
@@ -113,27 +273,37 @@
 <section class="mb-40" id="problem">
 <div class="flex flex-col md:flex-row gap-12 items-baseline mb-12">
 <span class="text-stone-300 text-6xl font-light shrink-0">01</span>
-<h2 class="text-4xl md:text-5xl font-bold tracking-tight">The Problem: Decision Paralysis & Lack of Clarity</h2>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">What I walked into.</h2>
 </div>
 <div class="space-y-8">
 <p class="text-2xl leading-relaxed text-stone-600 dark:text-stone-300 font-light italic">
-                            Existing learning platforms were fragmented, content-heavy, and failed to guide employees toward role-specific mastery.
+                            When I joined this project, the problem had already been named — low course completion rates, employee complaints about content discoverability, and an L&D team struggling to manage and update content effectively. Three separate signals pointing at the same broken system.
                         </p>
 <p class="text-lg leading-relaxed text-stone-500 dark:text-stone-400 max-w-3xl">
-                            67% of employees struggled to identify the right learning path due to cluttered and unstructured course catalogs
-                        </p>
-<p class="text-lg leading-relaxed text-stone-500 dark:text-stone-400 max-w-3xl">
-                            63% of enrolled learners failed to complete role-relevant programs because progress and outcomes were unclear.
+                            The brief framed this primarily as a learner experience problem. My research quickly revealed it was also an admin problem — and that solving one without the other would leave the platform broken in a different way.
                         </p>
 <div class="bg-white dark:bg-stone-900 border border-stone-border p-10 rounded-sm mt-12 editorial-shadow max-w-3xl">
 <p class="text-[10px] font-bold text-accent uppercase tracking-[0.3em] mb-6 flex items-center gap-2">
 <span class="material-symbols-outlined text-sm">warning</span> Core Pain Point
                             </p>
 <blockquote class="text-xl text-stone-800 dark:text-stone-200 font-light border-l-2 border-accent pl-8 italic">
-                                "I never know what I’m supposed to complete next. Courses are spread across different sections, and there’s no clear view of my progress or priorities." 
-                                <footer class="text-xs uppercase tracking-widest text-stone-400 mt-4 font-bold">— Anonymous Learner</footer>
+                                "I never know what I'm supposed to complete next. Courses are spread across different sections and there's no clear view of my progress or priorities." 
+                                <footer class="text-xs uppercase tracking-widest text-stone-400 mt-4 font-bold">— Anonymous Learner, Discovery Interview</footer>
 </blockquote>
 </div>
+<div class="two-sided">
+      <div class="two-sided-header">Two user groups — two different problems</div>
+      <div class="two-sided-cell">
+        <div class="two-sided-label">Employees / learners</div>
+        <h4>Couldn't navigate what mattered</h4>
+        <p>Content was undifferentiated. Learners had no way to tell mandatory courses from optional ones, no sense of where they were in a learning path, and no visibility into what completing a course actually meant for their role.</p>
+      </div>
+      <div class="two-sided-cell">
+        <div class="two-sided-label">L&D administrators</div>
+        <h4>Couldn't tell if anything was working</h4>
+        <p>Admins were publishing content into a black box. There was no way to see which courses were being completed, which were being abandoned, or whether the curriculum was actually reaching the right people.</p>
+      </div>
+    </div>
 </div>
 </section>
 <section class="mb-40 bg-accent p-12 md:p-20 rounded-sm" id="contributions">
@@ -177,49 +347,43 @@
 <section class="mb-40" id="process">
 <div class="flex flex-col md:flex-row gap-12 items-baseline mb-12">
 <span class="text-stone-300 text-6xl font-light shrink-0">02</span>
-<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Expected Outcomes</h2>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">What I found — and what the brief had missed.</h2>
 </div>
 <div class="space-y-12">
-<p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-3xl">
-                            The redesigned learning experience was expected to improve clarity around what to learn, why it matters, and how progress is measured, enabling employees to engage with role-relevant learning paths confidently and with reduced reliance on external guidance.
-                        </p>
-<p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-3xl">
-                            By structuring learning journeys and making progression visible, the platform aimed to shift learning behavior from passive exploration to goal-oriented skill development, while giving L&D and leadership teams better visibility into learning outcomes.
-<div class="overflow-hidden rounded-sm border border-stone-border editorial-shadow bg-white dark:bg-stone-900/40">
-<table class="w-full text-left border-collapse">
-<thead class="bg-stone-light dark:bg-stone-800/50">
-<tr>
-<th class="px-8 py-6 text-[10px] font-bold uppercase tracking-[0.2em] text-accent-muted">Expected Outcomes</th>
-<th class="px-8 py-6 text-[10px] font-bold uppercase tracking-[0.2em] text-accent-muted">Description</th>
+<p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-8xl">
+                            I conducted user interviews with 4–6 learners across different roles and seniority levels, and ran a collaborative discovery workshop with key stakeholders to surface assumptions and align on scope. Given the timeline, I made a deliberate choice to focus depth over breadth in the learner interviews — spending more time on a smaller group to understand the full task context rather than skimming across a larger sample.</p>
+<p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-8xl">
+                            Two findings shaped the entire design direction — neither of which had been fully surfaced in the original brief.
+<div class="insight-grid">
+      <div class="insight-card">
+        <div class="insight-tag">Finding 01 — Learners</div>
+        <h4>Mandatory vs optional was completely invisible</h4>
+        <p>Learners were spending time on optional courses while missing compliance-critical ones — not out of negligence, but because the platform gave no signal about relative importance. The content architecture treated all courses as equal.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-tag">Finding 02 — L&D admins</div>
+        <h4>No feedback loop between content and outcomes</h4>
+        <p>L&D admins had no visibility into completion rates, drop-off points, or whether role-mapped courses were reaching the right people. They were making curriculum decisions without any signal from the platform about what was or wasn't working.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-tag">Finding 03 — Both groups</div>
+        <h4>Progress had no meaning in the existing system</h4>
+        <p>Learners could complete courses and feel no sense of advancement. There was no structure connecting individual courses to role-level outcomes. Completion was an end in itself, not a step toward anything visible.</p>
+      </div>
+      <div class="insight-card">
+        <div class="insight-tag">Finding 04 — System</div>
+        <h4>The LMS infrastructure constrained deep personalisation</h4>
+        <p>The platform was built on legacy infrastructure with fixed role taxonomies and course metadata. Any solution had to work within existing data structures — deep individual personalisation wasn't technically available.</p>
+      </div>
+    </div>
+  </div>
 
-</tr>
-</thead>
-<tbody class="divide-y divide-stone-border dark:divide-gray-800">
-<tr class="hover:bg-stone-light/50 transition-colors">
-<td class="px-8 py-8 text-sm font-bold text-stone-800 dark:text-stone-200">Reduce learning discovery time</td>
-<td class="px-8 py-8 text-sm text-stone-500">This directly addressed the issue where 67% of employees struggled to identify the right learning path due to cluttered and unstructured course catalogs.</td>
-</tr>
-<tr class="hover:bg-stone-light/50 transition-colors">
-<td class="px-8 py-8 text-sm font-bold text-stone-800 dark:text-stone-200">Increase learning completion rates</td>
-<td class="px-8 py-8 text-sm text-stone-500">By introducing clear progression stages and certifications, the design aimed to reduce drop-offs, addressing the problem where 63% of enrolled learners failed to complete role-relevant programs</td>
-</tr>
-<tr class="hover:bg-stone-light/50 transition-colors">
-<td class="px-8 py-8 text-sm font-bold text-stone-800 dark:text-stone-200">Improve visibility into skill readiness</td>
-<td class="px-8 py-8 text-sm text-stone-500">This outcome targeted the gap where 69% of L&D stakeholders lacked visibility into employee skill maturity and role readiness across teams.</td>
-</tr>
-<tr class="hover:bg-stone-light/50 transition-colors">
-<td class="px-8 py-8 text-sm font-bold text-stone-800 dark:text-stone-200">Standardize learning across roles</td>
-<td class="px-8 py-8 text-sm text-stone-500">The role-based framework was designed to reduce redundant learning and inconsistency by providing structured, repeatable learning paths aligned to organizational roles.</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </section>
 <section class="mb-40" id="decisions">
 <div class="flex flex-col md:flex-row gap-12 items-baseline mb-16">
 <span class="text-stone-300 text-6xl font-light shrink-0">03</span>
-<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Key Design Decisions</h2>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">The decisions I made — and one I couldn't.</h2>
 </div>
 <div class="flex flex-col gap-32">
 <div class="flex flex-col gap-12">
@@ -227,14 +391,13 @@
 <div class="inline-block border-b-2 border-accent mb-6">
 <p class="text-[10px] font-bold uppercase tracking-[0.3em] pb-1 text-accent">Decision #1</p>
 </div>
-<h3 class="text-3xl font-bold mb-6">Implementation of Outcome-Driven Progress Frameworks</h3>
+<h3 class="text-3xl font-bold mb-6">Role-based learning paths that filtered content by job role</h3>
 <p class="text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
-                                    Improving the efficiency of user progression was achieved by replacing open-ended exploration with structured milestones:
-                                </p>
+                                    Rather than presenting every learner with the full course catalogue, I designed a role-mapped view that surfaced only the courses relevant to a learner's function. This directly addressed the discoverability problem — learners no longer needed to search for what was relevant to them. The role mapping used existing taxonomy data in the LMS, which meant it was buildable without backend changes. For L&D admins, it also created the first structured link between their content and specific role outcomes.</p>
 </div>
 <div class="bg-stone-light dark:bg-stone-900 p-4 rounded-sm border border-stone-border editorial-shadow">
 <div class="bg-stone-200 flex items-center justify-center relative overflow-hidden" data-alt="Close up of a data grid with color-coded status indicators">
-<img alt="Annotated UI" class=" object-cover w-full" src="images/Talent Academy/Hi-Fi Wireframes_2.png"/>
+<img alt="Annotated UI" class=" object-cover w-full" src="images/Talent Academy/Hi-Fi Wireframes.png"/>
 </div>
 <div class="p-12 grid grid-cols-1 md:grid-cols-2 gap-12">
 <div class="flex flex-col gap-4">
@@ -253,60 +416,106 @@
 <div class="inline-block border-b-2 border-accent mb-6">
 <p class="text-[10px] font-bold uppercase tracking-[0.3em] pb-1 text-accent">Decision #2</p>
 </div>
-<h3 class="text-3xl font-bold mb-6">Decision Reduction through Multi-Layered Personalization</h3>
+<h3 class="text-3xl font-bold mb-6">A 5-stage learning maturity model to give progress meaning</h3>
 <p class="text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
-                                    To combat "decision paralysis" and content fatigue in large-scale environments, the Talent Academy implemented a three-layer recommendation framework. This system automatically maps learning paths to an employee's organization-mapped role, primary skill area, and functional role, allowing users to find actionable content within seconds. 
+                                    I introduced a structured progression framework — Aware, Equipped, Competent, Expert, Certified — that connected individual course completions to visible role-level advancement. This solved the "progress has no meaning" finding by giving learners a destination, not just a completion percentage. It also gave L&D admins a framework to organise curriculum against — courses could be mapped to maturity stages, making it easier to identify gaps in the content offering. 
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-12">
+<div class="max-w-8xl">
+<div class="inline-block border-b-2 border-accent mb-6">
+<p class="text-[10px] font-bold uppercase tracking-[0.3em] pb-1 text-accent">Decision #3</p>
+</div>
+<h3 class="text-3xl font-bold mb-6">A progress visibility layer for learners</h3>
+<p class="text-lg text-stone-500 dark:text-stone-400 leading-relaxed">
+                                    I designed a persistent progress surface — modular progress cards, at-a-glance completion metrics, and clear mandatory vs optional labelling — that made a learner's status immediately readable without any navigation. This addressed both the "can't tell what's mandatory" finding and the broader sense that the platform gave no feedback on effort. In usability testing, task success rate for finding and understanding learning status reached 94%. 
                                 </p>
 </div>
 <div class="bg-stone-light dark:bg-stone-900 rounded-sm border border-stone-border p-4 editorial-shadow">
 <div class="bg-stone-200 flex items-center justify-center relative overflow-hidden" data-alt="Side drawer UI showing detailed shipment history and documentation">
-<img alt="UI Screenshot" class="object-cover w-full" src="images/Talent Academy/Hi-Fi Wireframes.png"/>
+<img alt="UI Screenshot" class="object-cover w-full" src="images/Talent Academy/Hi-Fi Wireframes_2.png"/>
 </div>
 </div>
 </div>
+<div class="alert-block">
+      <div class="alert-label">What didn't make it — technical constraint</div>
+      <h4>Individual personalisation was vetoed by the data available</h4>
+      <p>Early in the design process, I explored an adaptive recommendation layer that would surface courses based on individual learner behaviour and skill gaps — going beyond role-based filtering to true personalisation. L&D stakeholders were open to it, but the LMS infrastructure couldn't support it: the platform didn't have access to the individual skill or behaviour data the feature would have required. Rather than designing something the system couldn't deliver, I adapted the direction — leaning harder into the role-based path structure to create a form of structured personalisation within the constraints of what the data could actually support.</p>
+    </div>
+  </div>
 </div>
+
 </section>
 <section class="mb-40 pt-24 border-t border-stone-border" id="outcome">
 <div class="flex flex-col md:flex-row gap-12 items-baseline mb-16">
 <span class="text-stone-300 text-6xl font-light shrink-0">04</span>
-<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Outcome &amp; Impact</h2>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">How I tested and what it told me.</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
-<div class="bg-stone-light dark:bg-stone-900/50 p-12 border border-stone-border text-center">
-<p class="text-6xl font-light text-accent mb-4">3%</p>
-<p class="text-[10px] font-bold uppercase text-stone-400 tracking-[0.2em] mb-4">Form Errors</p>
-<p class="text-xs text-stone-500 leading-relaxed">Reduction in Form Submission Errors.</p>
+<p>Validation ran in two parallel tracks — structured usability testing with learners and regular design review sessions with L&D stakeholders. Both informed the design in different ways across the project.</p>
+
+    <div class="evidence-block">
+      <div class="evidence-icon">🧪</div>
+      <div class="evidence-text">
+        <h4>Usability testing with learners</h4>
+        <p>I ran moderated task-based sessions focused on the core learner journeys — finding a mandatory course, understanding current progress, and identifying the next step in a learning path. The 94% task success rate on finding and understanding learning status was a significant improvement over baseline observations of the old system. Sessions also surfaced edge cases in the maturity model labelling that I iterated on before handoff.</p>
+      </div>
+    </div>
+
+    <div class="evidence-block">
+      <div class="evidence-icon">📋</div>
+      <div class="evidence-text">
+        <h4>Stakeholder reviews with L&D and HR</h4>
+        <p>L&D stakeholders were involved at every major design milestone — not just for sign-off, but as a calibration check on whether the admin-facing features reflected how they actually managed curriculum. Several decisions about the admin dashboard layout changed directly because of these sessions, particularly around how course-to-role mapping was surfaced and edited.</p>
+      </div>
+    </div>
+</section>
+
+<section class="mb-40 pt-24 border-t border-stone-border" id="outcome">
+<div class="flex flex-col md:flex-row gap-12 items-baseline mb-16">
+<span class="text-stone-300 text-6xl font-light shrink-0">05</span>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">Where it landed.</h2>
 </div>
-<div class="bg-stone-light dark:bg-stone-900/50 p-12 border border-stone-border text-center">
-<p class="text-6xl font-light text-accent mb-4">94%</p>
-<p class="text-[10px] font-bold uppercase text-stone-400 tracking-[0.2em] mb-4">Task Success Rate</p>
-<p class="text-xs text-stone-500 leading-relaxed">The rate of successfully finding a lecture video improved.</p>
+<div class="status-pill"><span class="status-dot"></span> Launched</div>
+    <p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-8xl">The platform launched following a 12-month design and development cycle. Post-launch signals confirmed the directional improvements — course completion rates increased, learner-reported mental effort decreased, and L&D admins reported meaningful improvement in their ability to understand and act on content performance.</p>
+    <br><p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-8xl">The 94% task success rate in usability testing was the clearest validation signal during the project itself. The completion rate and perceived effort improvements are directional estimates validated with stakeholders rather than precise figures from production analytics — reflecting the scale of change rather than exact measured outcomes.</p>
+    <br><p class="text-lg leading-relaxed text-stone-600 dark:text-stone-400 max-w-8xl">One gap the launch exposed: without individual personalisation, highly experienced learners still encountered role-path content that felt too basic for their level. This was a known tradeoff from the data constraint, but its frequency in the pilot was higher than anticipated — and is the clearest signal of where a future iteration should focus.</p>
+</section>
+
+<section class="mb-40 pt-24 border-t border-stone-border" id="outcome">
+<div class="flex flex-col md:flex-row gap-12 items-baseline mb-16">
+<span class="text-stone-300 text-6xl font-light shrink-0">06</span>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight">What I'd do differently.</h2>
 </div>
-<div class="bg-stone-light dark:bg-stone-900/50 p-12 border border-stone-border text-center">
-<p class="text-6xl font-light text-accent mb-4">58%</p>
-<p class="text-[10px] font-bold uppercase text-stone-400 tracking-[0.2em] mb-4">User Sentiment</p>
-<p class="text-xs text-stone-500 leading-relaxed">Users reporting a clear sense of "understanding"</p>
-</div>
-</div>
-<div class="bg-stone-light dark:bg-stone-900 border border-stone-border p-12 md:p-24 rounded-sm relative overflow-hidden editorial-shadow">
-<span class="material-symbols-outlined absolute -right-8 -bottom-8 text-[200px] text-accent/5 select-none">format_quote</span>
-<div class="max-w-3xl relative z-10">
-<p class="text-3xl md:text-4xl font-light leading-tight italic text-stone-800 dark:text-stone-100">
-                                "The solution drove tangible improvements across the LMS ecosystem by reducing learning friction, improving content discoverability, and increasing real-time visibility into learner progress, resulting in  users completion learning tasks with greater confidence, fewer support dependencies, and clearer awareness of their progress and next steps."
-                            </p>
-<div class="mt-12 flex items-center gap-6">
-<div class="size-14 bg-accent rounded-full flex items-center justify-center text-white text-xl font-light">JD</div>
-</div>
-</div>
-</div>
-<!--<div class="mt-40 text-center flex flex-col items-center">
+<p>Two things I'd change if I started this project again:</p>
+
+    <div class="reflection-grid">
+      <div class="reflection-card">
+        <h4>Involve L&D admins in research earlier</h4>
+        <p>I came to the admin problem through the learner interviews — which meant I was already mid-design before I fully understood the admin side. Had I run parallel research tracks from the start, the admin dashboard would have been better scoped and less reactive to late-stage feedback.</p>
+      </div>
+      <div class="reflection-card">
+        <h4>Map governance constraints before designing</h4>
+        <p>I underestimated how significantly L&D governance rules — approval workflows, compliance requirements, curriculum ownership — would constrain the design space. The personalisation veto wasn't a surprise in retrospect, but I lost time exploring a direction that a more thorough constraints audit would have ruled out earlier.</p>
+      </div>
+    </div>
+
+<div class="bg-white dark:bg-stone-900 border border-stone-border p-10 rounded-sm mt-12 editorial-shadow max-w-3xl">
+<blockquote class="text-xl text-stone-800 dark:text-stone-200 font-light border-l-2 border-accent pl-8 italic">
+                                "This project taught me that enterprise learning platforms are two-sided products — and that designing only for the learner, without equal attention to the admin experience, produces a system that improves on the surface but remains broken underneath."
+                                <footer class="text-xs uppercase tracking-widest text-stone-400 mt-4 font-bold">— Suyash Chitranshi</footer>
+</blockquote>
+</div> 
+</section>
+<section>
+<div class="mt-40 text-center flex flex-col items-center">
 <h3 class="text-2xl font-light mb-10 max-w-md">Want to dive deeper into the process behind this transformation?</h3>
 <div class="flex flex-col sm:flex-row justify-center gap-6 w-full max-w-lg">
 <button class="flex-1 flex items-center justify-center gap-3 bg-transparent border border-stone-border font-bold py-5 px-8 rounded-sm hover:bg-stone-light dark:hover:bg-stone-800 transition-all text-xs uppercase tracking-widest">
-                                <a href="">Check Full Case Study on Behance</a>
-                                <span class="material-symbols-outlined text-sm">arrow_forward</span>-->
+                                <a href="https://www.behance.net/gallery/239687371/Enterprise-Workforce-Operations-Management-Platform">Check Full Case Study on Behance</a>
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </button>
-</div>
+</div><br><br>
 </div>
 </section>
 <section class="mb-40 pt-24 border-t border-stone-border" id="more-projects">
