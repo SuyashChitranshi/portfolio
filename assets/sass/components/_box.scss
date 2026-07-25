@@ -8,7 +8,9 @@
 
 	.box {
 		border-radius: _size(border-radius);
-		border: solid _size(border-width) _palette(border);
+		border: solid _size(border-width) _palette(border-bg);
+		background-color: _palette(bg);
+		box-shadow: _size(box-shadow);
 		margin-bottom: _size(element-margin);
 		padding: 1.5em;
 

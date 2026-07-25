@@ -5,46 +5,51 @@
 
 // Duration.
 	$duration: (
-		menu:				0.45s,
-		transition:			0.2s
+		menu:				0.4s,
+		transition:			0.3s
 	);
 
 // Size.
 	$size: (
-		border-radius:		4px,
+		border-radius:		16px,
 		border-width:		1px,
 		element-height:		3em,
 		element-margin:		2em,
 		gutter:				2.5em,
 		field-gutter:		2em,
 		inner:				68em,
-		menu:				22em
+		menu:				22em,
+		box-shadow:         (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)),
+		box-shadow-hover:   (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04))
 	);
 
 // Font.
 	$font: (
-		family:				('Source Sans Pro', Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
-		weight:				300,
-		weight-bold:		900,
-		weight-bold-alt:	700,
-		letter-spacing:		0.35em,
-		letter-spacing-alt:	-0.035em
+		family:				('Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif),
+		family-fixed:		('Fira Code', 'Courier New', monospace),
+		weight:				400,
+		weight-bold:		800,
+		weight-bold-alt:	600,
+		letter-spacing:		0.15em,
+		letter-spacing-alt:	-0.02em
 	);
 
 // Palette.
+	// Primary Accent: #4F46E5 (Indigo)
+	// Secondary Accent: #06B6D4 (Cyan)
 	$palette: (
 		bg:					#ffffff,
-		bg-accent:			#333333,
-		bg-alt:				#f6f6f6,
-		fg:					#585858,
+		bg-accent:			#F1F5F9,
+		bg-alt:				#F8FAFC,
+		fg:					#334155, // Slate 700
+		fg-bold:            #0F172A, // Slate 900
 		fg-accent:			#ffffff,
-		border:				#c9c9c9,
-		border-bg:			rgba(144,144,144,0.075),
-		accent1:			#f2849e,
-		accent2:			#7ecaf6,
-		accent3:			#7bd0c1,
-		accent4:			#c75b9b,
-		accent5:			#ae85ca,
-		accent6:			#8499e7,
+		border:				#E2E8F0, // Slate 200
+		border-bg:			rgba(241, 245, 249, 0.5), // Slate 100 with opacity
+		accent1:			#4F46E5, // Indigo 600
+		accent2:			#06B6D4, // Cyan 500
+		accent3:			#10B981, // Emerald 500
+		accent4:			#F59E0B, // Amber 500
+		accent5:			#8B5CF6, // Violet 500
+		accent6:			#EC4899, // Pink 500
 	);
